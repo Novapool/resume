@@ -1,0 +1,198 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\raggedright\large
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Laith Assaf} \\ \vspace{1pt}
+    \small (248) 480-5783 $|$ \href{mailto:assaflai@msu.edu}{\underline{assaflai@msu.edu}} $|$ 
+    \href{https://linkedin.com/in/laith-assaf-/}{\underline{linkedin.com/in/laith-assaf-}} $|$
+    \href{https://github.com/Novapool}{\underline{github.com/Novapool}} $|$
+    \href{https://resume-website-eight-psi.vercel.app/}{\underline{Portfolio}}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Computer Science student specializing in AI/ML with production experience in PyTorch, TensorFlow, and full-stack development. Led technical teams delivering AI platforms and computer vision models, seeking AI/ML engineering roles.}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, C++, SQL} $|$ \textbf{AI/ML Frameworks}{: PyTorch, TensorFlow, OpenAI API, OpenCV, Ollama} \\
+     \textbf{Web Technologies}{: FastAPI, React, REST APIs, Firebase, Supabase, Streamlit} $|$ \textbf{Tools \& Infrastructure}{: Git, Linux, SSH, Docker}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {IT and Media Services Support Associate}{May 2023 - Present}
+      {MSU College of Osteopathic Medicine}{East Lansing, MI}
+      \resumeItemListStart
+        \resumeItem{Managed 100+ \textbf{classroom configurations} across 4 Michigan locations supporting 1,200+ medical students, processing 50-70 \textbf{technical tickets} weekly with 5-10 minute average \textbf{response time}}
+        \resumeItem{Achieved 99.5\% class uptime through rapid resolution of \textbf{connectivity}, \textbf{display}, \textbf{audio}, and \textbf{Zoom}/\textbf{Polycom} issues using systematic troubleshooting: variable isolation and root cause elimination}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Technical Support Associate}{July 2023 - September 2023}
+      {Great Lakes Technology Services}{Southeast, MI}
+      \resumeItemListStart
+        \resumeItem{Completed 15+ major technical implementations across 12 dental offices in Southeast Michigan, including \textbf{Ubiquiti router} upgrades and \textbf{server migrations} with 100\% project success rate}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Nexus - AI Server Management System} $|$ \emph{FastAPI, GPT Models, SSH, AsyncIO}}{September 2024}
+          \resumeItemListStart
+            \resumeItem{Developed real-time \textbf{SSH terminal} platform using \textbf{FastAPI}, \textbf{WebSockets}, and \textbf{AsyncSSH} achieving sub-10ms response time for remote server management, deployed on personal infrastructure to manage live production server with \textbf{asynchronous} command execution and real-time output streaming}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SoundSense - Real-Time Audio Classification} $|$ \emph{Python, YAMNet, MemryX, Flask, WebSocket}}{October 2024}
+          \resumeItemListStart
+            \resumeItem{Built real-time \textbf{audio classification} system using Google's \textbf{YAMNet model} on \textbf{MemryX MXA hardware accelerators}, achieving \textbf{95\% accuracy} with $<$50ms \textbf{latency} across 521 audio event classes. Won 2nd place in MemryX sponsored track at MHacks 24-hour hackathon (University of Michigan)}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{MSU Racing Club Website} $|$ \emph{Supabase, JavaScript, HTML/CSS}}{November 2024}
+          \resumeItemListStart
+            \resumeItem{Built full-stack website for MSU Racing Club using \textbf{Supabase} for \textbf{authentication}, \textbf{PostgreSQL database}, and \textbf{file storage}, implementing secure user login, image upload capability, and dynamic club information display for 100+ active members}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {AI Club Workshop Coordinator}{March 2024 - Present}
+      {Michigan State University}{East Lansing, MI}
+      \resumeItemListStart
+        \resumeItem{Designed and delivered 8+ technical workshops on topics including \textbf{local LLMs}, \textbf{AI ethics}, and other \textbf{AI/ML concepts} to 500+ total attendees across all sessions, maintaining 90\% attendance rate and 4.8/5 satisfaction score}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {AI Club Project Lead}{January 2024 - Present}
+      {Michigan State University}{East Lansing, MI}
+      \resumeItemListStart
+        \resumeItem{Led 4-student team creating \textbf{Academic Performance Predictor} using \textbf{machine learning} to forecast student grades with 80\% accuracy, establishing \textbf{agile} processes, delivering within 4-month timeline}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Michigan State University, College of Engineering}{East Lansing, MI}
+      {BS Computer Science, Major GPA: 3.37 $|$ Specialization: AI/ML $|$ Dean's List}{August 2022 - May 2027}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
