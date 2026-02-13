@@ -1,0 +1,58 @@
+%% Cover Letter - Laith Assaf
+%% Built on moderncv template
+
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+\moderncvcolor{blue}
+\moderncvstyle{classic}
+
+\usepackage[scale=0.75]{geometry}
+\setlength{\footskip}{136.00005pt}
+
+% font loading
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+\usepackage[english]{babel}
+
+% personal data
+\name{Laith}{Assaf}
+\address{East Lansing, MI}{}{}
+\phone[mobile]{(248) 480-5783}
+\email{assaflai@msu.edu}
+\social[linkedin]{laith-assaf-}
+\social[github]{Novapool}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       letter       ---------------------------------------------------------
+\recipient{Engineering Recruiting Team}{Cignus Consulting\\Aviation Technology Division}
+\date{\today}
+\opening{Dear Cignus Consulting Recruiting Team,}
+\closing{Best regards,}
+\makelettertitle
+
+I am a junior Computer Science student at Michigan State University (AI/ML concentration, Dean's List) writing to apply for the Summer 2026 Software Engineering Intern position. The work Cignus is doing, transforming fragmented aviation data into actionable intelligence for the FAA, NASA, and major airports, sits squarely at the intersection of backend API development, AI pipelines, and real-world infrastructure that I have been building toward through my coursework and projects.
+
+My technical background maps directly to your platform's needs. I have built and deployed REST APIs using Python's \textbf{FastAPI} and \textbf{Flask} frameworks, implemented \textbf{WebSocket streaming} for real-time data delivery, and integrated the \textbf{OpenAI SDK} for production AI features. In Nexus, an AI-powered server management platform, I architected a FastAPI backend with AsyncSSH and asyncio achieving sub-10ms response latency across 5 concurrent servers, cutting daily administration overhead by 70\%. I also won MHacks 2025 (300+ participants) building SoundSense, a real-time audio classifier using a Flask/WebSocket backend with a YAMNet CNN at 95\% accuracy under 50ms latency. Through MSU's AI Club, where I lead workshops on \textbf{Ollama}, \textbf{LM Studio}, and \textbf{OpenAI API} integration for 500+ students, I have built practical depth in LLM deployment relevant to your RAG and AI agent work. I am also deeply familiar with \textbf{Model Context Protocol} architectures through daily use of MCP-powered tooling, which maps directly to your MCP Server Development needs.
+
+I am comfortable with \textbf{Docker}, Linux server administration, and Git-based collaborative workflows, and I pick up new domains quickly. Aviation knowledge is something I would build on the job. What draws me to Cignus is the challenge of building reliable systems over heterogeneous, high-stakes data like ADS-B feeds, NOTAMs, and weather streams, which is exactly the kind of infrastructure problem I find most interesting.
+
+I would welcome the opportunity to discuss how my experience in Python API development, LLM integration, and real-time systems could contribute to Cignus's platform. Thank you for your consideration.
+
+\makeletterclosing
+
+\end{document}

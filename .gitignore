@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# LaTeX compilation artifacts
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
