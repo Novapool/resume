@@ -1,65 +1,53 @@
-About Cignus
+Perpay is a certified B Corp and Philadelphia’s most impactful growth-stage startup. We are driven by a mission to significantly improve the financial stability of everyday Americans. For the past decade, we have established strong product-market fit and a profitable, efficient operating model across a suite of products, positioning Perpay as the premier financial partner for consumers with subprime credit.
 
-Cignus Consulting is an aviation technology firm delivering data-driven solutions that improve safety, efficiency, and operational performance across airports and aviation ecosystems. We work at the intersection of aviation operations, cloud platforms, analytics, and advanced decision-support systems - helping our clients move from fragmented data to actionable intelligence. Our clients include the FAA, NASA, Department of Defense, and major airports across the United States.
+With over 500,000 customers who have utilized more than $1 billion in spending power, we are at a pivotal moment. We are scaling our operations, building new offerings, and deepening our impact. We are looking for teammates eager to join us on this journey.
 
- 
+Our venture partners include First Round Capital and L Catterton.
 
-The Opportunity
+Products we’ve built to make an impact:
 
-We are seeking motivated and talented interns to join our engineering team for Summer 2026. You will work directly alongside senior engineers and aviation domain experts to build core components of our AI platform. This is a hands-on role where your contributions will make it into production systems used by real-world aviation stakeholders.
+Perpay Marketplace: Combines interest-free payments and modern e-commerce to reduce cost of ownership and promote healthy repayment behavior.
+Perpay+: Leverages Marketplace repayment history to help members monitor and build credit with all 3 credit bureaus.
+Perpay Credit Card: Expands access to the flexibility and benefits of a World Mastercard by removing common barriers like high security deposits and low approval odds.
+Our team thrives on in-person collaboration, operating from our unique center-city Philadelphia office. This comfortable "home away from home" space offers river views and fosters rapid product development, strong relationships, and career growth. The energy from achieving big wins is palpable here. While we primarily work in the office, we offer sensible flexibility for personal needs, such as sick children or urgent errands, and coordinate official remote weeks around major holidays. If you are passionate about a meaningful mission, collaboration, equity, and generous perks, Perpay is the best place to be in Philadelphia right now.
 
-This is an ideal opportunity for students who want to apply their technical skills to meaningful, real-world problems in a fast-paced, collaborative environment. Aviation knowledge is not required but is considered a plus.
+About the Role:
+As an Intern at Perpay, we want you to grown with us. Your primary responsibilities are going to be collaborating with your team to ship features, learning how to approach your work with a product mindset, and demonstrating the grit that will get you through challenging projects.
 
- 
+We understand the value of mentorship and offer students an opportunity to gain real work experience before graduation. In the 10-12 weeks we’ll be together, you’ll be like any other member of the engineering team working on features within our existing product roadmap. You’ll be contributing to our codebase, test & release features into production, partner with our other teams like product, design, data science & analytics, operations, and other stakeholders to ship new features and products. All while developing the skills to succeed in a fast-paced tech start-up environment and experiencing and contributing to our unique culture.
+Our tech stack: Javascript, React, Redux, Python, Django, Flask, Kubernetes, AWS, Docker and more
 
-What You’ll Work On
+Our greatest strength is our people and we’d love for you to be one of them!
 
-Depending on your skills and interests, your work may span several of the following areas:
+What You’ll Bring:
+Currently enrolled in or will receive a Bachelor’s or higher in Computer Science, Mathematics, or related technical discipline with an expected graduation date between winter 2026 – summer 2027
+Cumulative GPA of 3.0 or better
+Knowledge and experience with some if not all of our stack
+Ability to pick up new technologies quickly, with software engineering fundamentals being valued more than familiarity with specific tools or languages
+A strong focus on writing and deploying clear, readable, testable code
+Bonus:
 
-Data API Development: Design, build, and document RESTful APIs that connect diverse aviation data sources (flight data, weather, NOTAMs, airport operations, ADS-B) into a unified platform layer
-RAG System Development: Build and refine Retrieval-Augmented Generation pipelines that power our domain-specific AI assistant, including document ingestion, chunking strategies, vector storage, and retrieval optimization
-AI Skills & Agents: Develop modular AI “skills”—structured prompt-and-tool packages that enable our platform to perform specialized aviation analysis tasks autonomously
-MCP Server Development: Build Model Context Protocol servers that allow AI agents to interact with external tools, data sources, and enterprise systems in standardized ways
-Cloud Infrastructure: Work with Azure cloud services to deploy, monitor, and scale platform components including APIs, databases, and AI inference pipelines
-Frontend & Visualization: Contribute to dashboards and user interfaces that surface AI-generated insights for aviation professionals
-Data Engineering: Build data pipelines for ingestion, transformation, and enrichment of aviation datasets using Python and cloud-native tools
- 
+Enrolled in a Master’s Degree or advanced technical degree
+Previous work experience in a technical field
+Hey, we know not everybody checks all the boxes, so if you’re interested, please apply because you could be just what we’re looking for!
 
-Ideal Areas of Study
+What We’ll Bring For Internship: 
+Hourly compensation
+Espresso bar, full kitchen, weekly catered lunches, snacks, beverages, & everyday lunch essentials
+One of a kind office with comfortable work/lounge spaces and pleasant riverfront setting
+Opportunity to gain experience at one of the fastest-growing financial startups in the country in both e-commerce & fintech working cross functionally.
+What We’ll Bring to Full-time Team Members:
+Meaningful compensation and equity
+Premium medical benefits (fully paid base plan, and very reasonable premium for the buy-up option)
+4% employer 401k match
+Unlimited PTO policy
+​​Remote weeks around major holidays + extra holiday on weekends like MDW and LDW
+High quality catered lunch by local chefs, 4 days / week
+Gym subsidy
+Paid cell phone + plan
+Student loan repayment program
+Relocation assistance
+Generous team member discounts
+This is not a remote opportunity; it is 100% onsite (#LI-Onsite) (#LI-TH1) (#LI-AK1)
 
-We welcome applicants from a range of academic disciplines. The following areas of study are particularly relevant:
-
-Computer Science or Software Engineering
-Data Science or Data Engineering
-Artificial Intelligence or Machine Learning
-Information Systems or Information Technology
-Natural Language Processing or Computational Linguistics
-Cloud Computing or Distributed Systems
-Aerospace Engineering or Aviation Management (with a technical focus)
-Applied Mathematics or Statistics
-Human-Computer Interaction (for AI interface work)
- 
-
-Technical Skills & Qualifications
-
-Required:
-
-Proficiency in Python (primary development language for our platform)
-Familiarity with REST API design and development (FastAPI, Flask, or similar)
-Basic understanding of databases (SQL and/or NoSQL)
-Experience with Git and collaborative development workflows
-Strong problem-solving skills and ability to learn new technologies quickly
-Currently enrolled in a Bachelor’s or Master’s degree program (rising juniors, seniors, and graduate students preferred)
- 
-
-Preferred (any of the following are a plus):
-
-Experience with LLM frameworks such as LangChain, LlamaIndex, or the Anthropic/OpenAI SDKs
-Familiarity with RAG architectures, vector databases (pgvector, Weaviate, Pinecone), or embedding models
-Experience building or consuming MCP (Model Context Protocol) servers
-Knowledge of cloud platforms, particularly Microsoft Azure (Data Factory, Functions, DevOps)
-Experience with JavaScript/TypeScript or React for frontend development
-Familiarity with Docker, CI/CD pipelines, or Infrastructure as Code
-Exposure to data engineering concepts (ETL/ELT, data modeling, pipeline orchestration)
-Experience with data visualization tools (Power BI, Plotly, D3.js)
-Knowledge of aviation operations, air traffic management, or airport systems
+Perpay is proud to be an equal opportunity employer. We value diversity in all its forms and are committed to creating an inclusive environment. We do not discriminate on the basis of race, religion, color, national origin, gender identity, sexual orientation, sex (including pregnancy), marital status, political affiliation, age, veteran status, disability status or other non-merit factor. Please contact us at careers@perpay.com to request accommodation.
