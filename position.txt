@@ -1,57 +1,16 @@
-About Neuralink:
+Join the Institute for Cyber-Enabled Research (ICER) as a LLM Research and Development Technician! This is an ideal position for a motivated student interested AI development and coding.
 
-We are creating devices that enable a bi-directional interface with the brain. These devices allow us to restore movement to the paralyzed, restore sight to the blind, and revolutionize how humans interact with their digital world.
+Duties primarily include:
 
-Team Description:
+Work with ICER staff to develop an AI agent to assist users with submitting their code to run on the HPCC
+Manage a software repository and be able to collaborate with others on developing code
+Develop testing and validation schema to evaluate the accuracy of agents when given code to evaluate
+Gather data on agent performance and present results to ICER staff, leadership, and at MSU research forums
+The ideal candidate will have the following:
 
-The Brain Interfaces Software Team is responsible for the end to end software stack that manages implant communication, verification, manufacturing and monitoring. We own client side SDKs and full-stack platforms that are used by various divisions within the company. We are looking for versatile engineers who are interested in architecting and implementing elegant software solutions and who thrive with the autonomy to propose creative approaches to problems. 
-
-Neuralink strives to be a meritocratic environment: we require honest and transparent communication to ensure the best ideas win out, and we believe the best solutions emerge and the best teams are created when you assemble high-performing individuals and allow them to engage in rigorous and thoughtful inquiry. We want to work with exceptional people, and, to the extent that you excel, we want you to take on more responsibility and help all of us succeed. If this speaks to you, come join us.
-
-Job Responsibilities:
-
-As a Software Engineer Intern on the Brain Interfaces Software Team, your responsibilities will encompass:
-
-Developing and improving Neuralink’s Implant and Charger SDK
-Maintaining Neuralink’s brain interface software and firmware build tooling
-Developing and improving Neuralink’s Implant manufacturing line acceptance software
-Maintaining Neuralink's Implant design control verification testing software
-Developing and improving Neuralink’s Implant recorder system
-Developing and improving Neuralink’s Implant monitoring system
-Required Qualifications:
-
-Fluent in Python and C or Rust (don’t get hung up on this—being an exceptional software engineer matters above all)
-Experience (and comfortable) with the Linux/Unix systems and command line
-Evidence of exceptional ability in engineering, mathematics, or computer science
-Strong understanding of engineering first principles
-Strong intuition for what matters in a production system (vs. research-grade)
-Preferred Qualifications:
-
-Prior experience developing software for safety-critical systems
-About You:
-
-You find large challenges exciting and enjoy discovering and defining problems as much as solving them
-You deliver. You may enjoy thoughtful conversations about problems and perfecting design, but in the end, you know that what matters is delivering reliable solutions. (Our ultimate aim is to help people; the “right” solution doesn’t always achieve that)
-You are mission-driven and goal-oriented in your approach to solving problems
-You feel a sense of urgency to get things done sooner rather than later—because there is so much we, as people, can contribute to the world and accomplish in this life, it’s a shame to waste time
-You are resourceful, flexible, and adaptable; no task is too big or too small
-Pay Transparency:
-
-Based on California law, the following details are for California individuals only.
-
-Hourly Rate: 
-$35/Hr USD
-What We Offer:
-
-Full-time employees are eligible for the following benefits listed below.
-
-An opportunity to change the world and work with some of the smartest and most talented experts from different fields
-Growth potential; we rapidly advance team members who have an outsized impact
-Excellent medical, dental, and vision insurance through a PPO plan
-Paid holidays
-Commuter benefits
-Meals provided
-Equity (RSUs) *Temporary Employees & Interns excluded
-401(k) plan *Interns initially excluded until they work 1,000 hours
-Parental leave *Temporary Employees & Interns excluded
-Flexible time off *Temporary Employees & Interns excluded
+Experience coding with Python
+Comfortable working with command line interfaces
+Capable of solving programing problems by making use of reference material, question and answer boards, and LLMs
+An interest in studying the outcomes and performance of software and presenting this as research
+Self-motivated and able to work independently; also, comfortable receiving feedback and collaborating with others
+Desired skills for the role include, but are not limited to, experience in coding languages and willingness, familiarity with MSU's HPCC and SLRUM scheduling system, experience with developing integrated software pipelines, experience working with or training agentic AI, experience with data analysis relating to the validation or testing of AI and machine learning models.

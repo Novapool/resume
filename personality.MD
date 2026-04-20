@@ -17,7 +17,7 @@ This file contains personal background, interests, technical experience, and mot
 - CSE 320: Computer Organization and ARM Assembly
 - CSE 380: Database Systems
 - CSE 335: Object-Oriented Programming
-- International Trade Economics
+- EC  440:  International Trade Economics
 
 ---
 

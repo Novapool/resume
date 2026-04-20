@@ -1,141 +1,186 @@
-# Software engineering internship resumes in 2025: The brutal reality and what actually works
+# Internship Resume Research: SWE, AI/ML, IT & Solutions Architect (2026 Edition)
+
+## The 2026 Market Reality
+
+The internship market remains intensely competitive, though AI/ML roles have expanded the opportunity space beyond pure SWE. <br>
+
+- **Acceptance rates at top firms**: Sub-1% at FAANG (Goldman Sachs received 360,000+ apps for 2,500 spots)
+- **Volume context**: 433,000+ AI/ML internship postings active on Indeed as of April 2026 — demand exists outside FAANG
+- **New opportunity**: AI-native startups, fintechs, defense/aerospace, and consulting firms are actively recruiting students with hands-on AI/ML project experience, not just top-school pedigrees
+- **Application timing**: Top FAANG programs fill 8–12 months early (apply July–October for next summer). Mid-tier and startup roles remain open much later; rolling applications are common through March–April
+- **Volume strategy**: Successful first-timers typically apply to 100–500 positions. This is not failure — it is the mathematical reality
+
+---
+
+## Four Target Tracks: What Each Role Really Wants
+
+### 1. Software Engineering Intern
+**Core signal**: Can you build and ship real things?
+- DSA fluency (LeetCode Easy–Medium reliable, Medium as a stretch)
+- One language at depth (Python preferred for interviews; TypeScript/JavaScript for web roles)
+- Full-stack or backend project with real deployment
+- Git hygiene, testing basics, system design awareness at beginner level
+- AI tool proficiency (GitHub Copilot, Cursor) is now a baseline expectation, not a differentiator
+- **2026 shift**: Interns are expected to own features from day one; "shadowing + bug fixes" era is over
+
+### 2. AI/ML Intern
+**Core signal**: Can you work with real data and real models?
+- Python + ML stack (PyTorch/TensorFlow + scikit-learn + pandas/numpy)
+- At least one end-to-end project: data → model → evaluation → result
+- Quantified model performance (accuracy, F1, latency, etc.) — this is non-negotiable
+- Understanding of one problem domain deeply (NLP, CV, recommendation, time-series)
+- RAG, LangChain, vector DBs, fine-tuning LLMs all highly valued for applied AI roles
+- Kaggle competitions, open-source ML contributions, or published GitHub notebooks are treated as early work experience
+- **Key insight**: Most AI/ML intern postings outside FAANG accept BS students; many explicitly list coursework + projects as sufficient
+
+### 3. IT / IT Support / Systems Intern
+**Core signal**: Can you solve technical problems under pressure and communicate clearly?
+- Troubleshooting methodology (not just tools — the thinking process)
+- Familiarity with Windows/macOS/Linux environments
+- Networking basics (TCP/IP, DNS, DHCP, VLANs)
+- Scripting for automation (PowerShell, Bash, Python)
+- Ticketing systems and documentation (ServiceNow, Jira, Confluence)
+- Home lab or self-hosted infrastructure experience is a genuine differentiator
+- **Framing**: IT experience should emphasize scale (tickets/week), automation built, and user satisfaction — not just listing tasks
+
+### 4. Solutions Architect Intern / Associate SA
+**Core signal**: Can you translate business needs into technical solutions AND communicate both directions?
+- Cloud platform exposure (AWS, Azure, GCP) — AWS is most common entry point
+- System design thinking: scalability, reliability, cost tradeoffs
+- Communication: ability to present architecture to non-technical stakeholders
+- Pre-sales or client-facing experience (even simulated) is valued
+- AWS Certified Solutions Architect – Associate certification is the clearest credential signal for entry-level candidates
+- Demonstrated ability to document architecture and write technical proposals
+- **Key insight**: SA roles care about soft skills + architecture thinking more than raw coding ability. Technical depth matters less than breadth + communication
+
+---
+
+## What Differentiates Candidates Without Professional Experience
+
+### Ranking of differentiators (highest to lowest impact):
+
+1. **Deployed projects with real users or measurable outcomes** — strongest signal at all levels
+2. **Hackathon experience** — 78% of hiring managers actively seek this; awards dramatically strengthen positioning
+3. **Open-source contributions** — even documentation PRs or small bug fixes count for AI teams
+4. **Cloud certifications** — especially for SA and IT tracks (AWS SAA-C03 is achievable for students)
+5. **Kaggle / competition placements** — treated as work experience by AI teams
+6. **GitHub portfolio quality** — 2–3 pinned repos with professional READMEs and recent commits
+7. **Club leadership with technical outputs** — quantified attendees, workshops delivered, projects shipped
+
+---
+
+## Resume Structure by Track
+
+### Universal Rules (all four tracks)
+- **One page, no exceptions** for students/first-timers
+- No professional summary for SWE/AI/ML/IT — use space for projects instead
+- **SA track exception**: A 2–3 line summary is acceptable and often helpful for SA roles to frame the technical + communication combination
+- ATS: Standard section headings, no tables/graphics/columns, PDF (text-based), Arial/Calibri 10–12pt
+- Section order: Education → Technical Skills → Projects → Experience → Leadership (if space)
+
+### Section: Education
+- University, degree, major, expected graduation MM/YYYY
+- GPA if 3.5+ (list it; if below, omit)
+- Relevant coursework: 4–6 courses directly related to target role
+  - SWE: Data Structures, Algorithms, OS, Software Engineering
+  - AI/ML: Machine Learning, Deep Learning, Statistics, Linear Algebra
+  - IT: Networking, Systems Administration, Security
+  - SA: Cloud Computing, Distributed Systems, Database Design
+
+### Section: Technical Skills (categorized)
+- Languages: 3–5 you can discuss confidently in interviews
+- Frameworks/Libraries: Role-specific (React/Node for SWE; PyTorch/scikit-learn for ML; Terraform/Ansible for SA)
+- Tools: Git, Docker, relevant cloud services, monitoring tools
+- Certifications: List here or in Education (AWS SAA, Google Cloud, CompTIA A+/Network+)
+- **AI/ML specific**: List model types you've worked with (CNNs, transformers, LLMs) and datasets/domains
+
+### Section: Projects (the primary differentiator)
+- 2–4 projects; 2–3 bullets each
+- Formula: **[Action Verb] + [Technical Detail] + [Technologies Used] + [Quantified Outcome]**
+- For AI/ML: Always include dataset size, model architecture, and performance metric
+- For SA-targeted resumes: Include architecture decisions and tradeoff rationale
+- Hackathon projects: Include event name, date, role, and any awards
+- Project tiers:
+  - **A-Tier**: Deployed, real users, measurable impact, award-winning
+  - **B-Tier**: Technically sound, complete, demonstrates role-relevant skills
+  - **C-Tier**: Tutorial clones, incomplete, trivial (omit or improve before listing)
 
-The software engineering internship market in 2025 is the most competitive in modern tech history, with **acceptance rates below 1% at top firms**—literally five times harder than getting into Harvard. Yet students with zero professional experience are landing offers at FAANG and elite startups by treating their academic projects like professional work, mastering fundamentals over frameworks, and understanding that recruiters spend just six seconds scanning resumes. This report synthesizes insights from top university career services, FAANG recruiters, successful students, and current market data to provide actionable strategies for candidates with hackathon projects, club leadership, and IT support experience but no formal software engineering roles.
+### Section: Experience
+- Frame all experience with role-relevant emphasis
+- IT support: scale (tickets/week), automation, satisfaction metrics
+- Teaching assistant: students supported, topics covered, contributions
+- Research assistant: methods, tools, outcomes
+- Non-technical jobs: keep to 2 bullets max, focus on quantified soft-skill evidence
 
-## The harsh mathematics of 2025: Understanding what you're up against
+### Section: Leadership (only if space permits)
+- Emphasize technical outputs, not titles
+- Quantify: attendees, workshops run, projects shipped, sponsors secured
 
-The 2025 internship landscape represents a perfect storm of unprecedented competition. Goldman Sachs received **360,000+ applications for 2,500 summer internship spots**, yielding a 0.7% acceptance rate. Adobe saw similar numbers with 100,000+ applications for roughly 600 positions. Even moderately-sized startups are drowning in applications—one Y Combinator company received 23,000 applications in 30 days for just eight roles, averaging 3,000 applications per position.
+---
 
-This explosion stems from multiple converging factors. The 2023-2024 tech layoffs displaced over 400,000 experienced engineers who now compete for junior roles. Meanwhile, application volumes have increased 3-5x compared to the 2021 hiring boom, yet **only 10% of inbound applications meet basic qualifications**. Most critically, the optimal application window has compressed dramatically—top firms now fill positions 8-12 months in advance, with many 2025 summer programs fully staffed by October 2024.
+## Bullet Point Formulas by Role
 
-**The timeline reality is unforgiving**: You must apply in July-October of the previous year for summer internships. Applications submitted after December face a nearly depleted pool of opportunities. Goldman Sachs was already conducting final interviews for Summer 2026 positions as of June 2025, illustrating how early the cycle now begins.
+### SWE
+> "Built [what] using [stack] serving [X users / handling X req/sec] with [Y% uptime / Z ms latency]"
+> "Engineered [feature] in [language/framework], reducing [metric] by [X%] and improving [outcome]"
 
-The layoff aftermath fundamentally altered hiring philosophy. Companies adopted a "never settle" mentality, seeking candidates who check every box rather than showing potential in most areas. This means **the bar for technical demonstrations has risen sharply**—what sufficed as "promising" in 2021 now reads as "underprepared." Yet paradoxically, this creates opportunities for students who understand exactly what recruiters prioritize and how to communicate it effectively on one page.
+### AI/ML
+> "Trained [model type] on [X examples / Y GB dataset] achieving [Z% accuracy / F1 of X] using [framework]"
+> "Deployed [pipeline/API] using [LangChain/FastAPI/etc.] reducing [query latency / processing time] by [X%]"
+> "Fine-tuned [LLaMA/BERT/etc.] on domain-specific dataset, improving F1 from [X] to [Y] on [N-example test set]"
 
-## What top universities unanimously recommend for students without experience
+### IT
+> "Resolved [X] support tickets weekly across [Windows/macOS/Linux] maintaining [X%] satisfaction rating"
+> "Automated [task] using [PowerShell/Python/Bash], reducing resolution time by [X%]"
 
-After analyzing official guidelines from MIT, Stanford, Carnegie Mellon, Berkeley, Georgia Tech, and UIUC, a remarkably consistent picture emerges. Every top computer science program mandates **exactly one page for undergraduate internship candidates—no exceptions, no flexibility, no "almost one page."** The goal isn't to fit content onto one page; it's to completely fill one page with dense, relevant accomplishments that demonstrate technical capability and potential.
+### SA
+> "Designed [cloud architecture] on [AWS/Azure/GCP] supporting [X users / Y TB data] with [Z% uptime]"
+> "Architected [solution] translating [business requirement] into [technical design], reducing [cost/latency/risk] by [X%]"
 
-Section ordering shows universal agreement: lead with **Education**, immediately followed by **Technical Skills**, then **Projects**, with work experience and extracurriculars only if space permits. This isn't arbitrary—it reflects how recruiters scan resumes in their six-second initial review. They look for your school, your degree, your graduation timeline, and then immediately want to see what you can actually build. Education comes first because as a student, it remains your strongest credential. Your university's reputation, your GPA (if 3.5 or higher), and your relevant coursework establish baseline credibility before recruiters evaluate your practical abilities.
+---
 
-Professional objectives or summary statements receive a decisive rejection across all institutions. CMU, MIT, and Berkeley resume samples consistently omit them. Stanford explicitly notes they're optional and includes samples without them. The reasoning is pragmatic: that 2-3 line space is vastly more valuable when dedicated to an additional project or deeper technical details about existing work. Your application already makes your intentions clear—you're applying for a software engineering internship. An objective that states "seeking software engineering internship to leverage my skills" communicates nothing recruiters don't already know.
+## Action Verbs by Category
 
-The projects section emerges as the critical differentiator for students without professional experience. Universities recommend **2-4 high-quality projects with detailed technical descriptions**. MIT explicitly states: "Remember: experience comes in many forms. In addition to jobs, internships, or research roles, consider including class projects, competitions, or personal projects." CMU recommends a separate "Project Highlights" section positioned prominently. The key insight: academic projects, hackathon builds, and personal work should receive the same rigorous treatment as professional employment—action verbs, technical specifications, quantified outcomes, and measurable impact.
+**Build/Create**: Architected, Engineered, Developed, Built, Implemented, Deployed, Designed
+**Improve**: Optimized, Reduced, Accelerated, Automated, Refactored, Streamlined
+**Lead/Communicate**: Led, Presented, Documented, Coordinated, Mentored, Facilitated
+**Research/Analyze**: Evaluated, Analyzed, Benchmarked, Investigated, Fine-tuned
 
-Berkeley, UIUC, and Stanford all emphasize the quantification imperative. MIT's guidance exemplifies this: "Quantify if you can. If you gave a presentation, include how many people attended. If you raised or managed money, say how much." For technical projects, this translates to users served, performance improvements measured in milliseconds or percentages, lines of code contributed, team sizes, test coverage percentages, and dataset scales. A well-crafted project bullet follows UIUC's formula: "Action verb + detail about what you did + technical tools/languages used + outcome, result, or impact."
+**Never use**: worked on, helped with, responsible for, participated in, involved in
 
-## The FAANG hiring reality: What recruiters actually evaluate in six seconds
+---
 
-Technical recruiters at Meta, Google, Amazon, Apple, and Netflix evaluate internship candidates through a fundamentally different lens than full-time applicants. The core distinction: **potential and learning velocity outweigh proven track record**. As one Google recruiter explained, "For a junior role, focus on strong coding, willingness to learn, and solid foundations." Intern acceptance rates, while still brutally competitive, run higher than full-time positions because companies explicitly view internships as talent pipelines—56% of FAANG+ interns receive full-time offers, with conversion rates exceeding 70% at some firms.
+## ATS Optimization
 
-The must-have technical skills create a surprisingly short list. **Data structures and algorithms mastery remains non-negotiable**—recruiters expect competence with arrays, linked lists, stacks, queues, hash maps, trees, and graphs. Candidates must solve LeetCode Medium problems reliably, though Easy-to-Medium suffices for most internship interviews. Proficiency in one programming language matters more than superficial familiarity with many, though Python has emerged as the interview standard due to its conciseness. Beyond this, everything becomes nice-to-have rather than mandatory.
+- Mirror job description language exactly (e.g., if JD says "RAG pipelines," use that phrase)
+- Include both acronyms and full terms: "ML" and "Machine Learning"; "RAG" and "retrieval-augmented generation"
+- Standard headings only: Education, Experience, Projects, Skills — no creative alternatives
+- Test: copy PDF text into Notepad; if it reads cleanly, ATS can parse it
 
-The nice-to-have category encompasses what actually differentiates strong candidates from exceptional ones. Side projects that solve real problems carry enormous weight—a Capital One recruiter noted, "One of the things that excites me the most is when I see a GitHub or StackOverflow link on a resume. I can look into what you're actually working on and see if you're trying to tinker with new tech on the side." Well-documented GitHub repositories, live demos of deployed applications, and contributions to open-source projects signal genuine passion and initiative beyond coursework requirements.
+---
 
-**Hackathon experience has become remarkably valuable**—78% of hiring managers actively seek it when evaluating technical candidates. Recruiters view hackathon participation as demonstrating three critical attributes: hands-on skills under pressure, team collaboration ability, and rapid problem-solving. As one anonymous Google hiring manager stated, "A hackathon winner shows me more about problem-solving instincts than a 4.0 GPA ever could." Even without wins, documented hackathon projects that show what you built, the technologies employed, and lessons learned from failures demonstrate valuable troubleshooting abilities.
+## 2026 AI/ML-Specific Additions
 
-Resume screening follows a predictable priority sequence for interns: contact information including GitHub and LinkedIn, education section (which validates you're in the target candidate pool), projects section (which proves you can build), work experience (interpreted broadly to include teaching assistant roles, research positions, and even relevant non-technical jobs), technical skills, and finally awards and leadership. The critical insight: **recruiters scan your entire resume in 6-8 seconds initially**. In that window, they need to see you have the right educational background, relevant technical skills, and evidence of building real things.
+- **LLM application work** (RAG, agents, prompt engineering, LangChain, LlamaIndex) is now valued equally to classical ML for applied AI intern roles
+- **MLOps basics** (Docker, model versioning, basic CI/CD for models) differentiates AI/ML applicants
+- **Vector databases** (Pinecone, Weaviate, Chroma) are frequently mentioned in 2026 AI intern JDs
+- **Kaggle** competitions are treated as early work experience by AI teams — rank and dataset size matter
+- Example A-tier AI bullet: "Fine-tuned BERT on 50k-example classification dataset, improving F1 from 0.71 to 0.84; deployed as FastAPI endpoint with sub-200ms P95 latency"
 
-Red flags that trigger immediate rejection cluster around three categories. Content red flags include AI-generated generic resumes (53% of hiring managers cite this as disqualifying), no quantifiable achievements anywhere, vague buzzword-filled descriptions without specifics, and obviously exaggerated skills that will be caught in technical screens. Formatting red flags encompass typos and grammatical errors (77% of hiring managers reject resumes with any errors), poor ATS formatting using tables or graphics, and inconsistent formatting in dates, spacing, or style. The professional conduct category includes unprofessional email addresses, LinkedIn profiles inconsistent with resume claims, and resumes exceeding one page for internship candidates.
+---
 
-## Projects, portfolios, and the quality versus quantity debate settled
+## Compensation Context (2026)
 
-Students who successfully landed FAANG internships without prior experience share a unanimous perspective on portfolio strategy: **quality demolishes quantity every time**. Kyle DeGuzman, who joined Amazon as a front-end engineer starting with "no internship, tech job, or mentorship," initially built 30 projects on GitHub. Reflecting on his journey, he concluded, "I definitely think quality is superior to quantity. Four projects that are incredibly complex—like a TikTok clone, a recipe app—I think you would also be fine." Kaizen Conroy, who secured six SWE internship offers, reinforces this: "If you have a lot of projects, pick your favourite 3-4 for your resume. Having 7 projects looks impressive but unless they're all super impressive it just looks like filler."
+- FAANG+ SWE interns: $45–70/hour
+- AI/ML interns at AI-native startups: often $35–55/hour + possible equity
+- IT/SA roles: more variable, $20–40/hour; often a stepping stone
 
-The complexity expectation varies by experience level but follows clear patterns. For students starting their journey, **begin with foundational projects that demonstrate core competencies**: Discord or Slack bots with practical functionality, website clones that replicate existing platforms with your own features, personal portfolio websites using modern frameworks like React, or simple web applications that solve specific problems. These establish you understand basic programming concepts, can work with APIs, and ship functional code.
+---
 
-Intermediate candidates should showcase **full-stack applications with real-world applicability**: e-commerce platforms with authentication and payment processing, data analysis projects using Python with pandas and matplotlib that derive insights from substantial datasets, mobile applications that solve actual problems (not just tutorial clones), or projects demonstrating emerging technology competency like machine learning implementations. The defining characteristic: these projects should run live, handle real data, and demonstrate architecture decisions beyond following tutorials.
+## Application Strategy
 
-Academic projects carry legitimate weight when presented correctly. Teaching assistants, class projects from advanced courses, and research assistant work all qualify as valuable experience—but only when described with the same rigor as professional work. The transformation requires action verbs, technical details, quantified scope, and articulated impact. MIT's guidance applies directly: "Developed [what] using [technologies] resulting in [outcome/metric]." An academic project becomes resume-worthy when bullets read: "Built distributed systems project simulating airplane traffic control using Java and multithreading, handling 1,000+ concurrent flight simulations with 99.8% accuracy" rather than "Class project in distributed systems."
-
-**GitHub presence matters differently than students expect**. While most employers never examine personal GitHub portfolios in detail, recruiters do check them to verify resume claims and assess code quality. The winning strategy: pin 2-3 best repositories to your profile, write professional README files that explain project purpose and setup instructions, include live demo links where applicable, and show recent commit activity demonstrating continuous learning. Documentation quality often matters more than code volume—a well-explained smaller project outperforms an undocumented complex repository.
-
-Hackathon projects deserve special presentation treatment. Create a dedicated "Hackathons" section if you have multiple participations, or integrate standout hackathon projects into your Projects section with clear context. Format should include event name, date, role, technologies used, and outcome. **Quantify impact even for rapid prototypes**: "Built real-time collaborative whiteboard using WebSocket and React at HackMIT 2024, enabling 50+ simultaneous users with sub-100ms latency" communicates far more than "Created whiteboard app at hackathon." Awards dramatically strengthen positioning—"Selected as 'Most Scalable Solution' by AWS architects from 200+ submissions" provides concrete validation.
-
-The positioning of non-technical work experience requires strategic judgment. IT support roles, help desk work, and computer repair jobs all demonstrate technical troubleshooting, customer communication, and problem-solving under pressure—frame them to emphasize these transferable skills. Customer service, tutoring, and team leadership positions show soft skills that complement technical abilities. Include non-technical work when you need to fill your one page, but keep descriptions brief (2-3 bullets maximum) and focus on quantified achievements and relevant competencies. Once you accumulate sufficient technical experience, these roles should be removed to allocate more space to projects and technical work.
-
-## Formatting, ATS, and the mechanical details that silently kill applications
-
-The Applicant Tracking System reality dominates modern resume submission. **98.4% of Fortune 500 companies use ATS software in 2024**, and these systems parse resumes before human eyes ever see them. Understanding ATS mechanics transforms from optional optimization to survival requirement. The software extracts text from your resume, identifies sections using standard headings, pulls keywords matching job descriptions, scores your resume against requirements, and presents top-ranked candidates to recruiters. Failure at any stage means your resume never reaches human review.
-
-ATS optimization demands specific technical choices. Use standard section headings—"Education," "Experience," "Skills," "Projects"—rather than creative alternatives like "My Journey" or "What I've Accomplished." Employ simple, clean layouts with standard fonts: Arial, Calibri, Times New Roman, or Helvetica in 10-12pt size. Avoid all graphics, images, charts, text boxes, tables, and columns—these elements confuse parsing algorithms. Never place critical information in headers or footers, as many ATS systems skip these entirely. Save your resume as a PDF (text-based, not scanned image) or .docx format, and test it by copying text from your PDF into Notepad—if the text appears readable and properly ordered, ATS can likely parse it correctly.
-
-Keyword strategy requires meticulous tailoring for each application. Mirror exact language from job descriptions, include both acronyms and full terms ("ML" and "Machine Learning"), and use keywords in context within bullet points rather than just listing them. Job title matching carries outsized importance—if the position title is "Software Engineering Intern," ensure that exact phrase appears in your resume. List technical skills near the top in a dedicated section organized by category: Languages, Frameworks, Tools, Databases. This placement serves dual purposes: keywords get extracted early in the document, and human recruiters can quickly verify your technical fit.
-
-Section ordering controversy resolves into clear guidance for students without professional experience. Education absolutely stays at the top despite occasional advice to lead with experience—your student status makes educational credentials your primary qualification. Technical Skills follow immediately after education to give recruiters instant context about your capabilities. Projects become your main "experience" section since you lack professional work history. Work Experience, if included, should focus on technical relevance (teaching assistant, research assistant, IT support) and minimize space allocated to generic jobs. Extracurriculars and leadership activities rank as the lowest priority, included only if they demonstrate technical skills or if you're struggling to fill one page.
-
-The one-page mandate bears repeating because students consistently question it: for internship candidates with no professional experience, **one page is absolutely non-negotiable**. This isn't a suggestion or guideline subject to interpretation. As Novoresume bluntly states, "If you're a student, you should never, ever, go past the one-page limit. You barely have any work experience." The constraint forces prioritization, proves you can communicate concisely, and respects the reality that recruiters review hundreds of applications. Pages can separate in physical stacks, and scanning multiple pages takes extra time recruiters don't allocate to junior candidates.
-
-Common formatting mistakes create immediate rejection. Typos and grammatical errors disqualify 77% of candidates in hiring manager surveys—proofread ruthlessly and have multiple people review your resume. Inconsistent formatting in dates (use MM/YYYY throughout), bullet styles, spacing, indents, or bolding signals carelessness. Trailing whitespace at the bottom makes resumes look incomplete, while overcrowded text with no breathing room becomes difficult to scan. Bullet points that end with 2-3 words on a final line waste vertical space—either condense to one line or expand to two full lines for maximum space efficiency.
-
-Vague bullet points destroy otherwise strong resumes. Replace weak verbs like "worked on," "participated in," "helped with," or "involved in" with powerful action verbs: Developed, Implemented, Designed, Built, Created, Engineered, Optimized, Automated, Deployed. Never list responsibilities without outcomes—"Responsible for developing a website" communicates nothing useful. Transform to "Developed responsive e-commerce website using React and Node.js, serving 1,000+ daily users with 99.9% uptime" to demonstrate capability and impact.
-
-## The AI revolution has fundamentally changed technical interviews and expectations
-
-The most significant 2025 shift comes from AI tools transforming both how candidates prepare and how companies evaluate them. Canva Engineering made headlines by explicitly allowing—indeed, expecting—backend, ML, and frontend interview candidates to use AI tools like GitHub Copilot, Cursor, and Claude during technical interviews. Their reasoning: **"Nearly half of our engineers are daily active AI tool users"**—they're testing real-world skills. Traditional computer science fundamentals questions like implementing Conway's Game of Life become trivially solvable by AI, rendering them useless for evaluation.
-
-The new interview paradigm focuses on complex, ambiguous problems requiring iterative thinking, requirement clarification, and engineering judgment. Instead of "implement binary search," companies now pose challenges like "Build a control system for managing aircraft takeoffs at a busy airport" that demand strategic use of AI for subtasks while maintaining architectural control. **Candidates must demonstrate ability to guide AI effectively, critically review generated code, debug AI solutions, and exercise judgment in ambiguous scenarios**. Canva's findings proved revealing: "Candidates with minimal AI experience struggled, not because they couldn't code, but because they lacked judgment to guide AI effectively."
-
-For resume preparation, this creates new expectations. Simply listing programming languages no longer suffices—companies want to see AI/ML competency demonstrated through projects. This doesn't mean just using ChatGPT to debug code; it means building actual models with TensorFlow or PyTorch, implementing LangChain workflows, or deploying machine learning solutions. Google reports 25%+ of new code at the company is AI-generated, making AI tool proficiency a baseline expectation rather than a differentiating skill.
-
-The METR research study on AI productivity provides sobering context. Sixteen experienced developers working on real open-source projects performed **19% slower when using AI tools**, despite perceiving they were 24% faster. The perception gap reveals a critical insight: AI helps with simple tasks but adds debugging and verification overhead that candidates must acknowledge and manage. For internship candidates, this suggests focusing on fundamentals first—master data structures, algorithms, and system design before relying on AI assistants.
-
-Simultaneously, the AI cheating epidemic has forced companies to redesign interview processes. Tools like "Interview Coder" and "Leetcode Wizard" enable undetectable cheating in remote interviews, prompting some companies to return to exclusively on-site technical assessments. Others have adopted verbal questions where candidates explain solutions without typing code, as AI tools struggle with audio-only input. Resume reviewers now scrutinize GitHub profiles more carefully, looking for commit history, code review participation, and organic development patterns rather than polished final products that could be AI-generated.
-
-The in-demand skills landscape reflects AI's influence. Python has become the #1 most in-demand language, driven by its dominance in AI/ML frameworks. Cloud platforms (AWS, Azure, GCP) have transitioned from nice-to-have to essential as companies expect interns to deploy and scale applications using modern infrastructure. Cybersecurity skills have surged in importance following record breaches in 2024. Data engineering competency—building pipelines, handling big data with Spark or Hadoop, extracting insights—appears in increasing percentages of internship job descriptions.
-
-## Practical strategies for students with hackathons, clubs, and IT support experience
-
-Your specific background—hackathon projects, club leadership, and IT support work—provides stronger positioning than you might realize. The key lies in strategic presentation and emphasis allocation. Hackathons deserve prominent placement because **78% of hiring managers actively seek this experience**. Create a dedicated Projects section where 2-3 of your best hackathon builds receive detailed treatment. Each project should follow this structure: Project Name | Technologies Used | Context (hackathon name and date).
-
-For bullet points, lead with strong action verbs and emphasize three elements: the problem solved, the technical implementation, and measurable outcomes. Even 24-hour prototypes benefit from quantification: "Built real-time collaborative code editor using WebSocket and Monaco Editor at HackMIT 2024, supporting 50+ simultaneous users with sub-100ms latency and implementing operational transformation for conflict resolution." This bullet communicates technical depth (WebSocket, specific editor library, understanding of conflict resolution algorithms), scale (50+ users, sub-100ms), and context (prestigious hackathon). If you won awards, feature them prominently: "Selected as 'Best Use of AI' from 200+ submissions by panel of Meta engineers."
-
-Club leadership translates to resume value when you emphasize technical projects and quantifiable impact. The medium-priority insight from research: leadership positions in CS clubs matter less than technical projects produced through those clubs. Transform "President, Computer Science Club" into a results-focused entry: "President, Computer Science Club | September 2023 - Present" followed by bullets like "Led team of 20 students to organize campus hackathon attracting 100+ participants and $10K in sponsorships from local tech companies" and "Architected club website using React and Firebase, serving 300+ members with event registration and project showcase features."
-
-Your IT support experience provides more leverage than typical non-technical work because it demonstrates technical troubleshooting, customer communication under pressure, and problem-solving—all directly relevant to software engineering. Frame it strategically: "IT Support Specialist | Company Name | Dates" with bullets emphasizing technical depth and quantified impact. Examples: "Resolved 50+ technical support tickets weekly across Windows, macOS, and Linux environments, maintaining 95% customer satisfaction rating" and "Automated routine maintenance tasks using PowerShell scripts, reducing average ticket resolution time by 30%." These bullets prove technical competency, quantifiable outcomes, and initiative beyond basic job requirements.
-
-The optimal resume structure for your profile:
-
-**Contact Information** (one line): Name, location, email, phone, GitHub, LinkedIn
-
-**Education**: University, degree, major, expected graduation MM/YYYY, GPA if 3.5+, relevant coursework (Data Structures, Algorithms, Software Engineering, Operating Systems—list 4-6 most relevant)
-
-**Technical Skills** (categorized):
-- Languages: [Python, Java, JavaScript, C++—whatever you actually know]
-- Frameworks: [React, Node.js, Django—whatever you've used in projects]
-- Tools: [Git, Docker, VS Code, JIRA—development tools you're familiar with]
-- Databases: [PostgreSQL, MongoDB—whatever you've worked with]
-
-**Projects** (2-3 detailed entries):
-- Best hackathon project with award/recognition
-- Most technically complex personal or academic project
-- Additional strong project showing different skills
-
-**Experience**:
-- IT Support role with technically-focused bullets
-- Any teaching assistant or research assistant positions
-- Omit generic non-technical jobs unless needed to fill space
-
-**Leadership** (only if space permits):
-- CS Club leadership with emphasis on technical projects
-- Other relevant extracurriculars with quantified impact
-
-Application strategy requires understanding the brutal numbers game. Students who successfully landed internships without prior experience typically applied to **100-500 positions**. Bryan Bergo applied to nearly 100 positions and received just two interviews before learning critical lessons. Anupta Islam applied to "100-500 places" before her first internship. This isn't failure—it's the mathematical reality of sub-1% acceptance rates.
-
-The timeline imperative cannot be overstated: **start applying in July-August for the following summer**, aim to complete most applications by October, and treat December as the absolute deadline for major companies. Many 2025 summer programs filled completely by November 2024. Goldman Sachs began conducting final interviews for Summer 2026 positions in June 2025, illustrating how far ahead top firms recruit.
-
-Beyond volume, leverage referrals and networking aggressively. Most hires come through referrals and direct recruiter outreach, not inbound applications. Connect with 5-10 FAANG employees weekly on LinkedIn with personalized messages: "I applied for [specific intern role] at [company]—would you be open to referring me? I have experience in [relevant technical area] and would appreciate the opportunity to discuss the role." This approach generated a 75% response rate for one successful student.
-
-Career fair tactics deserve attention: arrive 1-2 hours early to avoid long lines, bring 30-50 printed resumes, prepare a 30-second elevator pitch introducing yourself and stating your interest, ask specific questions showing you researched the company, and return to booths of particular interest later in the event so recruiters remember you. One student secured his first internship specifically because "the recruiter remembered me from the career fair and helped when my application got lost in the system."
-
-Interview preparation should allocate time across three critical areas. **Technical preparation requires daily practice**: solve 150+ LeetCode problems focusing on Easy to Medium difficulty, master data structures and algorithms fundamentals, practice explaining your thought process aloud, and increasingly, practice using AI tools strategically to solve problems. Behavioral preparation demands developing 5-7 STAR method stories covering different competencies like teamwork, leadership, handling conflict, learning from failure, and taking initiative. Company research means understanding products, recent news, technical challenges, and culture for each company you interview with.
-
-## What it all means: Rethinking how student resumes should work
-
-The convergence of extreme competition, AI transformation, and evolving hiring practices has fundamentally altered what makes an effective internship resume. The actionable synthesis for students without professional experience: **treat your projects with the same rigor as professional work, focus maniacally on quantifiable outcomes, and understand that your resume must survive both algorithmic parsing and six-second human review**. Quality crushes quantity in every dimension—four exceptional projects with live demos and measurable impact will vastly outperform ten tutorial clones with vague descriptions.
-
-The strategic positioning insight cuts against conventional wisdom: your lack of professional experience isn't a liability to apologize for or hide. It's the expected state for internship candidates, and companies explicitly evaluate you on learning potential rather than proven track record. But this only holds when you demonstrate that potential through substantial projects showing technical depth, hackathon experiences proving you can build under pressure, and coursework establishing solid fundamentals. The students who secure FAANG offers without prior internships aren't lucky—they're strategic about showcasing the right signals in the right format.
-
-The market competitiveness means you cannot afford formatting mistakes, generic applications, or missed deadlines. With acceptance rates below 1% at top firms, even excellent candidates face rejection most of the time. The implication: apply broadly (100+ applications represents normal volume), start exceptionally early (July-October of previous year), leverage every possible referral connection, and continuously improve your resume based on feedback. The students who succeeded applied this volume strategy combined with meticulous tailoring for each position, not spray-and-pray generic submissions.
-
-Perhaps most crucially, the AI revolution has bifurcated expectations in unexpected ways. Companies now expect candidates to be proficient with AI tools for practical development work, yet interviews increasingly test fundamental judgment and architectural thinking that AI cannot provide. Your resume should demonstrate both: projects showing you can build with modern AI/ML tools, but also evidence of deep technical understanding through complex implementations, algorithm optimizations, and system design decisions. The winning candidates in 2025 and beyond will be those who harness AI as a productivity amplifier while proving their own engineering judgment remains indispensable.
+- **FAANG/big tech**: Apply July–October for next summer. After November, most spots are gone.
+- **Startups and mid-tier**: Apply year-round; many hire on rolling basis through March–April
+- **Referrals**: Most hires at top companies come through referrals. Target 5–10 LinkedIn connections/week with specific asks
+- **Career fairs**: Arrive early, bring 30–50 resumes, prepare 30-second pitch, follow up within 24 hours
+- **Volume**: 100–300 applications is normal for a first internship search. This is not failure — it is math.
