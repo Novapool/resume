@@ -8,10 +8,20 @@ This is a LaTeX-based resume and cover letter repository with an AI-assisted tai
 
 - **Master resume** (`Resume-Editing/master_resume.tex`): Superset archive and source of truth. Holds every experience, project, bullet variant, and skill, tagged by track. ~3 pages. Never submitted.
 - **Track resumes** (`Resume-Editing/{software,aiml,it,sa}_resume.tex`): Four one-page starting points assembled from the superset, one per job type
-- **Personality profile** (`personality.md`): Personal background, interests, and context for cover letters
+- **Personality profile** (`personality.MD`): Personal background, interests, and context for cover letters
 - **Resumes directory** (`Resumes/`): Job-specific tailored resume PDFs organized by company/role
 - **Cover letters directory** (`CoverLetters/`): Job-specific cover letter PDFs organized by company/role
 - **Research** (`research.md`): Resume best practices and industry insights
+
+---
+
+## Current Status (August 2026)
+
+- **Recruiting for**: Summer 2027 internships. FAANG/big-tech applications for that cycle open July-October 2026; startups and mid-tier hire on a rolling basis through March-April
+- **Graduation**: May 2027 (senior, completing a fifth year)
+- **Tracks**: SWE/backend (primary), AI/ML + agentic (primary), IT/systems, solutions architect
+- **In progress**: AWS SAA-C03, the clearest credential gap on the SA track
+- Keep this block current. Stale dates here propagate into every cover letter.
 
 ---
 
@@ -43,6 +53,7 @@ The primary workflow for tailoring resumes to specific job postings:
    - Acceptable lengths are multiples of line width (1, 2, or 3 full lines)
    - Account for bold text reducing effective capacity
 5. **Bold relevant keywords** from job posting using `\textbf{...}`
+5a. **Section order is fixed**: Education -> Experience -> Projects -> Leadership -> Skills, on all four tracks. `research.md` recommends a different order and has been explicitly overruled. Do not re-propose it. The SA resume is the one exception, adding a Summary above Education
 6. **Skills section consistency**: Technologies mentioned in skills must appear in projects/experience
 7. **Graduation date adjustment**: May be shifted to align with internship timeline (always one semester after internship)
 8. **Ignore AI agent traps** in job postings
@@ -66,13 +77,44 @@ Replace `[JobName]` with the company or role name (e.g., `Unity-ML`, `Google-SWE
 
 ---
 
+## Content Integrity
+
+Every number on these resumes has been audited once. Keep it that way.
+
+**The bar**: a claim ships only if it can be derived out loud in an interview. Not "is it true" but "can it survive a follow-up question."
+
+**Comment conventions in `master_resume.tex`:**
+- `% VERIFY:` — on the resume but unconfirmed. Raise it before the resume ships; never silently promote it
+- `% NOTE:` — deliberately cut, with the reason. A tombstone. Do not resurrect without new evidence
+
+**Already cut, do not reintroduce**: "$50K annual losses prevented", "1,000+ concurrent rooms", "80% prediction accuracy". Each failed the defensibility bar.
+
+**Confirmed**: Ember's 80%+ code reuse; AI Club's 500+ attendees / 90% retention / 4.8/5; the Pokemon agent's 93% vs scripted baselines and 747 rated ladder games; the CMA's 13.3% MAPE; GR Cup's R² = 0.631 over 3,257 laps.
+
+**SoundSense placed 2nd at MHacks 2025.** It is not a win. Never write "Winner."
+
+**Handle with care**: the Pokemon ladder win rate (~27% raw, ~19-23% contested; that project's own `MILESTONES.md` documents four corrections invalidating earlier numbers). Keep it off the resume.
+
+---
+
+## Positioning AI and Agentic Work (2026)
+
+- Using Claude Code / Copilot / Cursor is **baseline**, not a differentiator. One skills-line mention, never its own bullet
+- **Building** agent systems is the differentiator: orchestration, hooks, MCP, context and state management, evaluation harnesses. That earns a full project entry
+- Never bury AI tooling in a generic list (`Tools: Git, Docker, Claude Code`). Give it its own skills category, or weave it into a bullet where it changed an outcome
+- On backend/infra resumes, keep agentic work compressed. Leading with it dilutes the backend signal those teams hire for
+- Evaluation discipline reads as senior and is rare: pre-registered success criteria, catching your own confounds, restating inflated numbers
+- Over-polished, keyword-stuffed resumes are now a negative signal (Greenhouse 2026: 91% of hiring managers have caught or suspected AI-driven misrepresentation). The defense is artifacts, not adjectives
+
+---
+
 ## Cover Letter Workflow
 
 The cover letter lives in `master_cover_letter.tex` and uses the moderncv template (letter-only, no CV sections).
 
 ### Process
 1. **Review source materials**:
-   - `personality.md`: Personal background, interests, technical experience, and motivations
+   - `personality.MD`: Personal background, interests, technical experience, and motivations
    - `position.txt`: Job posting details, company information, and role requirements
 2. **Edit master cover letter**: Work with `master_cover_letter.tex` to tailor content for specific job posting
 3. **Compile to PDF**: Build using `pdflatex master_cover_letter.tex`
@@ -80,7 +122,7 @@ The cover letter lives in `master_cover_letter.tex` and uses the moderncv templa
 5. **Save to job directory**: Move final PDF to `CoverLetters/[JobName]/Laith_Assaf_CoverLetter.pdf`
 
 ### Input Files
-- `personality.md`: Personal context, technical background, interests, and career motivations
+- `personality.MD`: Personal context, technical background, interests, and career motivations
 - `position.txt`: Job description and company-specific information
 - `master_cover_letter.tex`: Master cover letter template using moderncv
 
@@ -95,7 +137,7 @@ The cover letter lives in `master_cover_letter.tex` and uses the moderncv templa
    - **Paragraph 1**: Hook with genuine interest in company/role, brief background
    - **Paragraph 2**: Relevant experience and projects that align with role requirements
    - **Paragraph 3**: Why this company specifically, forward-looking close
-2. **Authenticity**: Use real experiences and interests from `personality.md` - no generic statements
+2. **Authenticity**: Use real experiences and interests from `personality.MD` - no generic statements
 3. **Company-specific**: Reference actual company products, values, or initiatives from `position.txt`
 4. **Technical credibility**: Highlight relevant technical work (MSU AI Club, personal projects, coursework)
 5. **Length**: Keep to 3/4 page maximum (~300-400 words)
@@ -157,7 +199,7 @@ Cover letters should follow standard business letter format with:
 - `Resume-Editing/it_resume.tex`: One-page IT / systems resume
 - `Resume-Editing/sa_resume.tex`: One-page solutions architect resume (the only variant with a summary)
 - `master_cover_letter.tex`: Master cover letter template using moderncv (letter-only)
-- `personality.md`: Personal background, interests, technical experience, and motivations for cover letters
+- `personality.MD`: Personal background, interests, technical experience, and motivations for cover letters
 - `Resumes/`: Directory containing job-specific tailored resume PDFs, organized by company/role
 - `CoverLetters/`: Directory containing job-specific cover letter PDFs, organized by company/role
 - `research.md`: Comprehensive resume best practices and AI/ML hiring insights
@@ -171,4 +213,4 @@ Cover letters should follow standard business letter format with:
 2. **Match directory names** between Resumes/ and CoverLetters/ for the same position
 3. **Bold keywords** that appear in job posting to increase ATS match rate
 4. **Verify PDF generation** before moving to final directory
-5. **Keep personality.md updated** with new projects, skills, and experiences
+5. **Keep `personality.MD` updated** with new projects, skills, and experiences

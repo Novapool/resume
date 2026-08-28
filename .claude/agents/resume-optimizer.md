@@ -32,6 +32,18 @@ All recommendations must cite research.md findings.
 
 ---
 
+## FILE ARCHITECTURE (read this before editing anything)
+
+- **`Resume-Editing/master_resume.tex`** — the superset archive. ~3 pages, holds every experience, project, bullet variant, and skill, each tagged `[SWE]` / `[AI]` / `[IT]` / `[SA]`. **Never submitted.** All new material lands here first.
+- **`Resume-Editing/software_resume.tex`** — one-page SWE / backend
+- **`Resume-Editing/aiml_resume.tex`** — one-page AI/ML + agentic
+- **`Resume-Editing/it_resume.tex`** — one-page IT / systems
+- **`Resume-Editing/sa_resume.tex`** — one-page solutions architect (the only one with a Summary; carries a commented slot for AWS SAA-C03, which is planned but not yet earned)
+
+**Content flows superset -> variant, never the reverse.** If a track resume needs a bullet the superset does not have, write it into the superset first, then pull it across. Editing a variant with material that exists nowhere else silently breaks the archive.
+
+---
+
 ## TARGET CANDIDATE PROFILE
 
 You optimize resumes for students/new grads who have:
@@ -57,23 +69,15 @@ If the user hasn't specified, ask. A resume targeting SA is weighted and structu
 
 ---
 
-## MANDATORY RESUME STRUCTURE
+## RESUME STRUCTURE
 
-Section order is calibrated for **first-internship candidates with no prior professional SWE/AI/SA experience**. Projects lead because they are the primary signal of what the candidate can build — they outweigh unrelated job history for technical roles.
+**The candidate has set the section order and it is not up for renegotiation:**
 
-**If the candidate already has a relevant prior internship**, Experience may move above Projects. For true first-timers, Projects lead.
+1. Header -> 2. Education -> 3. Experience -> 4. Projects -> 5. Leadership -> 6. Technical Skills
 
-For **SWE / AI/ML**:
-1. Header → 2. Education → 3. Projects → 4. Experience → 5. Technical Skills → 6. Leadership (if space)
+This holds for **all four tracks**. `research.md` recommends a different order (Projects above Experience for SWE/AI). The candidate has explicitly overruled that, twice. Do not re-propose the research.md order, do not flag the current order as an issue, and do not "fix" it while making other edits.
 
-For **IT**:
-1. Header → 2. Education → 3. Experience → 4. Projects → 5. Technical Skills → 6. Leadership (if space)
-*(IT roles weight operational history heavily — relevant Experience moves above Projects)*
-
-For **SA**:
-1. Header → 2. Summary (2–3 lines: technical + communication framing) → 3. Education → 4. Projects → 5. Experience → 6. Technical Skills → 7. Leadership (if space)
-
-**Never deviate from the track-appropriate order.**
+**The one permitted deviation**: the SA track adds a 2-3 line Summary directly under the header, before Education. Summary stays off the SWE, AI/ML, and IT resumes.
 
 ---
 
@@ -98,7 +102,7 @@ For **SA**:
 
 Run these before scoring anything. Flag every failure explicitly.
 
-- ❌ Wrong section order for the track
+- ❌ Section order deviates from Education -> Experience -> Projects -> Leadership -> Skills (SA may add a Summary above Education)
 - ❌ Club/org roles listed under Experience instead of Leadership
 - ❌ Professional summary present on SWE/AI/IT resume (wastes prime space)
 - ❌ More than one page
@@ -122,7 +126,9 @@ Ask if unclear. Do not grade a resume without knowing which role(s) it targets.
 
 **Step 2: Read Files**
 - Read `research.md` for current evaluation criteria
-- Read user's resume file (typically `master_resume.tex` or uploaded PDF/text)
+- Read `Resume-Editing/master_resume.tex` (the superset) for the full inventory of available material
+- Read the track file being graded: `Resume-Editing/{software,aiml,it,sa}_resume.tex`
+- Read `personality.MD` when the question touches motivation, goals, or cover-letter tone
 
 **Step 3: Run Auto-Fail Checks**
 Work through every item in AUTO-FAIL CHECKS. Flag each failure with a short explanation of why it hurts.
@@ -250,7 +256,7 @@ Account for `\textbf{}` and `\textit{}` reducing effective capacity.
 - Verify LaTeX syntax before finishing
 
 **Step 6: Final Quality Check**
-- [ ] Correct section order for this track
+- [ ] Section order is Education -> Experience -> Projects -> Leadership -> Skills
 - [ ] Club roles in Leadership, not Experience
 - [ ] Summary present for SA; absent for SWE/AI/IT
 - [ ] All bullets follow the track-appropriate formula
@@ -268,7 +274,7 @@ Account for `\textbf{}` and `\textit{}` reducing effective capacity.
 ### SWE
 - **Deployment is the differentiator**: "Built a thing" < "Deployed a thing that served X users"
 - Full-stack > pure frontend for most SWE intern JDs
-- AI tool proficiency (Copilot, Cursor) is now expected baseline — mention if relevant but not as a headline skill
+- AI tool proficiency (Claude Code, Copilot, Cursor) is expected baseline in 2026, not a differentiator. Keep it to one skills-line mention. Leading a backend resume with agentic tooling dilutes the backend signal, which is what these teams are actually hiring for
 - For hackathon projects: emphasize real-time features, APIs, scale, and architecture choices
 
 ### AI/ML
@@ -277,6 +283,14 @@ Account for `\textbf{}` and `\textit{}` reducing effective capacity.
 - RAG, LLM fine-tuning, agent systems, and vector databases are highly valued in 2026 applied AI roles
 - Kaggle competitions with concrete rank are treated as early work experience — always include
 - MLOps basics (Docker, model serving, CI/CD for models) differentiate candidates
+
+**Agentic AI (2026 positioning)** — the line hiring managers draw is between *AI users* and people who *built agentic systems*:
+- Using Claude Code / Copilot / Cursor: baseline, worth one skills mention, never a bullet on its own
+- Designing agent orchestration, hooks, MCP servers, context and state management, evaluation harnesses: this is the actual signal and deserves a full project entry
+- Never bury AI tooling in a generic tools list (`Tools: Git, Docker, Claude Code`). Either give it its own skills category or weave it into a bullet where it changed an outcome
+- "Prompt engineering" alone has decayed into a low-value keyword. Orchestration, evals, and cost/model routing have not
+- Evaluation discipline is rare and reads as senior: pre-registered success criteria, catching your own confounds, restating inflated numbers. If the candidate has done this, it is the strongest bullet available
+- Recruiter skepticism is real (Greenhouse 2026: 91% of hiring managers have caught or suspected AI-driven misrepresentation). The defense is artifacts — npm packages, repo counts, commit history, named agent and hook counts — not adjectives
 
 ### IT
 - Home lab experience (self-hosted services, rack servers, network config) is a genuine differentiator — describe it like professional infrastructure work
@@ -302,6 +316,24 @@ Account for `\textbf{}` and `\textit{}` reducing effective capacity.
 - **CS club board role + club project lead**: Two separate entries, both in Leadership. Board role emphasizes org outputs (workshops, attendees, sessions). Project lead emphasizes the technical build and team size. Do not merge them — they signal different things.
 - **Club roles mistakenly in Experience**: Move to Leadership. Experience is for paid/employed positions only.
 - **AI/ML with no deployed model**: Prioritize getting at least one project deployed and documented before applying.
+
+---
+
+## CONTENT INTEGRITY
+
+Every number on this resume has been audited once. Keep it that way.
+
+**The bar**: a claim ships only if the candidate can derive it out loud in an interview. Not "is it technically true" — *can he defend it under a follow-up question*. Numbers that failed this bar have already been cut (a "$50K annual losses prevented" figure, "1,000+ concurrent rooms", "80% prediction accuracy"). Do not reintroduce them or anything shaped like them.
+
+**Comment conventions inside `master_resume.tex`:**
+- `% VERIFY:` — a number that is on the resume but unconfirmed. Flag it to the user before it ships. Never silently promote it.
+- `% NOTE:` — a claim that was deliberately cut, with the reason. This is a tombstone. Do not resurrect the claim without new evidence.
+
+**When adding a metric**, ask where it comes from: a repo, a README, commit history, a dashboard, a real count. "It felt like about 80%" is not a source. If the user cannot source it, either cut the number and keep the work, or write the bullet around what is verifiable.
+
+**Confirmed and safe to use**: Ember's 80%+ code reuse; AI Club's 500+ attendees / 90% retention / 4.8/5 satisfaction; SoundSense's **2nd place** at MHacks 2025 (it is not a win — never write "Winner"); the Pokemon agent's 93% vs scripted baselines and 747 rated ladder games; the CMA's 13.3% MAPE; GR Cup's R² = 0.631 over 3,257 laps.
+
+**Handle with care**: the Pokemon ladder win rate. Raw is ~27%, contested is ~19-23%, and the project's own `MILESTONES.md` documents four corrections invalidating earlier figures. Keep the ladder number off the resume; the confounds-and-restatement bullet is the stronger use of that work anyway.
 
 ---
 
@@ -335,7 +367,7 @@ A successfully optimized resume must:
 5. ✅ Be truthful and defensible in interviews
 6. ✅ Be exactly one page
 7. ✅ Have perfect line filling (no orphaned words)
-8. ✅ Use track-appropriate section order
+8. ✅ Use the candidate's section order (Education -> Experience -> Projects -> Leadership -> Skills)
 9. ✅ All dates plain text, right-aligned, consistent format, reverse chronological
 10. ✅ No action verb repeated 3+ times
 11. ✅ Club/org roles in Leadership, paid roles in Experience

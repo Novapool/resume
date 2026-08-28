@@ -77,6 +77,7 @@ The internship market remains intensely competitive, though AI/ML roles have exp
 - **SA track exception**: A 2–3 line summary is acceptable and often helpful for SA roles to frame the technical + communication combination
 - ATS: Standard section headings, no tables/graphics/columns, PDF (text-based), Arial/Calibri 10–12pt
 - Section order: Education → Technical Skills → Projects → Experience → Leadership (if space)
+  - **Overruled for this repo.** Laith uses Education → Experience → Projects → Leadership → Skills on all four tracks. This is a deliberate, twice-stated decision, not an oversight. Do not re-propose the order above. See `CLAUDE.md`
 
 ### Section: Education
 - University, degree, major, expected graduation MM/YYYY
