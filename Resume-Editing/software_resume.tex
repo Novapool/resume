@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\raggedright\large
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Laith Assaf} \\ \vspace{1pt}
+    \small East Lansing, MI $|$ (248) 480-5783 $|$ \href{mailto:assaflai@msu.edu}{\underline{assaflai@msu.edu}} $|$ \href{https://linkedin.com/in/laith-assaf-}{\underline{linkedin.com/in/laith-assaf-}} $|$ \href{https://github.com/Novapool}{\underline{github.com/Novapool}}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Michigan State University, College of Engineering}{East Lansing, MI}
+      {BS Computer Science, AI/ML $|$ Dean's List x3}{August 2022 - May 2027}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Data Structures \& Algorithms (CSE 331), Software Design (CSE 335), Computer Systems (CSE 325), Computer Organization \& ARM Assembly (CSE 320)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PC Technician Intern}{May 2026 - Present}
+      {Onsite Support Team, Delta Dental}{Okemos, MI}
+      \resumeItemListStart
+        \resumeItem{Deployed and configured \textbf{150+} workstations (monitors, docking stations, keyboards, mice) across a new corporate office buildout, imaging endpoints via \textbf{Ivanti} MDM to enforce standardized enterprise configuration}
+        \resumeItem{Developing an automated ticket creation workflow in \textbf{Power Automate} to streamline IT ops; performed PC imaging and disk backups and drive kills across endpoint lifecycle tasks}
+      \resumeItemListEnd
+    \resumeSubheading
+      {IT and Media Services Support Associate}{May 2023 - Present}
+      {MSU College of Osteopathic Medicine}{East Lansing, MI}
+      \resumeItemListStart
+        \resumeItem{Supported 100+ classroom AV and conferencing systems across 4 buildings serving \textbf{1,200+ students}, resolving 50-70 tickets weekly and maintaining \textbf{99.5\% uptime} through a documented diagnostic methodology}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Bonfire Platform \& Ember Framework} $|$ \emph{TypeScript, Socket.io, Next.js}}{December 2025 -- April 2026}
+          \resumeItemListStart
+            \resumeItem{Designed and published \textbf{Ember}, an open-source TypeScript framework for multiplayer party games (\textbf{@bonfire-ember/core/server/client} npm packages), implementing phase state machine, WebSocket room orchestration, and player lifecycle into a 5-hook API enabling \textbf{80\%+ code reuse} across new game builds}
+            \resumeItem{Architected a \textbf{multi-room orchestration system} on Express + \textbf{Socket.io} namespaces with \textbf{Firebase Realtime DB} state sync, hosting 4 concurrent games on a single \textbf{Railway} server with configurable disconnect strategies and TTL-based room cleanup}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Pokemon Battle Agent - Reinforcement Learning} $|$ \emph{PyTorch, PPO, MCTS}}{May 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Trained a competitive battle agent through \textbf{behavior cloning} on human replays, \textbf{anchored PPO} fine-tuning of an MLP policy/value network over structured per-Pokemon token observations, and \textbf{determinized MCTS} at decision time, reaching a \textbf{93\% win rate} against scripted baselines after testing and retiring a transformer policy}
+            \resumeItem{Built a parallel simulation and evaluation harness on the \textbf{Pokemon Showdown} engine spanning \textbf{747 rated games}; a self-run code review uncovered four confounds inflating prior results, and I restated every affected number rather than reporting the inflated figure}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SoundSense - Real-Time Audio Classification} $|$ \emph{YAMNet, Flask} $|$ \textbf{2nd Place, MHacks}}{October 2025}
+          \resumeItemListStart
+            \resumeItem{Placed \textbf{2nd of 300+ participants at MHacks 2025} building a real-time audio classifier on \textbf{YAMNet} CNN and MemryX edge accelerators, hitting \textbf{95\% accuracy} at $<$50ms latency and streaming hazard alerts through a \textbf{Flask} + \textbf{WebSocket} pipeline to a live interface for hearing-impaired users, running all inference on-device}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Michigan State University $|$ AI Club}{East Lansing, MI}
+      {Workshop Coordinator \& Project Lead}{January 2025 - Present}
+      \resumeItemListStart
+        \resumeItem{Delivered 8+ technical workshops on \textbf{local LLM deployment} (Ollama, LM Studio), agent orchestration, and \textbf{PyTorch} fundamentals to 500+ attendees, and led a 4-student team shipping an \textbf{LLM-powered} academic performance predictor across 50+ courses on the GPT-4 API with agile sprints}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, C\#, TypeScript, SQL} \\
+     \textbf{AI/ML}{: PyTorch, reinforcement learning (PPO), MCTS, LLM APIs (Anthropic, OpenAI), Ollama} \\
+     \textbf{Web \& Backend}{: FastAPI, Flask, Express, Node.js, React, Next.js, Socket.io, REST APIs, WebSockets, Firebase} \\
+     \textbf{Infrastructure \& Tools}{: Git, Linux, Docker, PostgreSQL, Railway, Vercel, Claude Code, agent orchestration, MCP}
+    }}
+ \end{itemize}
+
+\end{document}

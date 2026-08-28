@@ -6,7 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a LaTeX-based resume and cover letter repository with an AI-assisted tailoring workflow. The repository contains:
 
-- **Master resume** (`master_resume.tex`): Source of truth containing all experience, projects, and skills
+- **Master resume** (`Resume-Editing/master_resume.tex`): Superset archive and source of truth. Holds every experience, project, bullet variant, and skill, tagged by track. ~3 pages. Never submitted.
+- **Track resumes** (`Resume-Editing/{software,aiml,it,sa}_resume.tex`): Four one-page starting points assembled from the superset, one per job type
 - **Personality profile** (`personality.md`): Personal background, interests, and context for cover letters
 - **Resumes directory** (`Resumes/`): Job-specific tailored resume PDFs organized by company/role
 - **Cover letters directory** (`CoverLetters/`): Job-specific cover letter PDFs organized by company/role
@@ -19,17 +20,22 @@ This is a LaTeX-based resume and cover letter repository with an AI-assisted tai
 The primary workflow for tailoring resumes to specific job postings:
 
 ### Process
-1. **Edit master resume**: Work with `master_resume.tex` to tailor content for specific job posting
-2. **Compile to PDF**: Build the tailored resume using `pdflatex master_resume.tex`
-3. **Save to job directory**: Move final PDF to `Resumes/[JobName]/Laith_Assaf_Resume.pdf`
+1. **Pick the track resume** closest to the posting: `software_resume.tex` (SWE/backend), `aiml_resume.tex` (AI/ML, agentic, AI-native startups), `it_resume.tex` (IT/systems support), `sa_resume.tex` (solutions architect)
+2. **Swap blocks in from the superset**: pull bullets and projects from `master_resume.tex`, matching the posting. Content flows superset -> variant, never the reverse
+3. **Compile to PDF**: `pdflatex [track]_resume.tex`
+4. **Verify one page** and check that every bullet still fills whole lines
+5. **Save to job directory**: Move final PDF to `Resumes/[JobName]/Laith_Assaf_Resume.pdf`
+
+**New material always lands in `master_resume.tex` first.** Editing a track resume directly with content the superset does not have breaks the archive.
 
 ### Input Files
-- `master_resume.tex`: Complete resume with all experiences, projects, and skills
+- `Resume-Editing/master_resume.tex`: Superset archive with all experiences, projects, and skills
+- `Resume-Editing/[track]_resume.tex`: The one-page track resume closest to the posting
 - Job posting (provided by user or in context)
 
 ### Tailoring Rules
 
-1. **Content must only come from master_resume.tex** - no fabrication
+1. **Content must only come from `master_resume.tex`** - no fabrication
 2. **Keep resume to one page** (~52 lines of content, ~105 characters per line)
 3. **All bullet points must follow STAR methodology** (Situation, Task, Action, Result)
 4. **Bullet point line-filling requirements**:
@@ -45,15 +51,15 @@ The primary workflow for tailoring resumes to specific job postings:
 
 **Local Build:**
 ```bash
-pdflatex master_resume.tex
+cd Resume-Editing && pdflatex [track]_resume.tex
 ```
 
-This generates `master_resume.pdf` in the current directory.
+This generates `[track]_resume.pdf` alongside the source.
 
 **Saving Job-Specific Resumes:**
 ```bash
 mkdir -p Resumes/[JobName]
-mv master_resume.pdf Resumes/[JobName]/Laith_Assaf_Resume.pdf
+mv Resume-Editing/[track]_resume.pdf Resumes/[JobName]/Laith_Assaf_Resume.pdf
 ```
 
 Replace `[JobName]` with the company or role name (e.g., `Unity-ML`, `Google-SWE`, `Meta-AI`)
@@ -145,7 +151,11 @@ Cover letters should follow standard business letter format with:
 
 ## Key Files
 
-- `master_resume.tex`: Master resume file containing all experiences, projects, and skills
+- `Resume-Editing/master_resume.tex`: Superset archive, source of truth, ~3 pages, never submitted
+- `Resume-Editing/software_resume.tex`: One-page SWE / backend resume
+- `Resume-Editing/aiml_resume.tex`: One-page AI/ML and agentic resume
+- `Resume-Editing/it_resume.tex`: One-page IT / systems resume
+- `Resume-Editing/sa_resume.tex`: One-page solutions architect resume (the only variant with a summary)
 - `master_cover_letter.tex`: Master cover letter template using moderncv (letter-only)
 - `personality.md`: Personal background, interests, technical experience, and motivations for cover letters
 - `Resumes/`: Directory containing job-specific tailored resume PDFs, organized by company/role
@@ -157,7 +167,7 @@ Cover letters should follow standard business letter format with:
 
 ## Workflow Best Practices
 
-1. **Always review both source files** before tailoring (master_resume.tex or personality.md)
+1. **Always review both source files** before tailoring (`master_resume.tex` or `personality.MD`)
 2. **Match directory names** between Resumes/ and CoverLetters/ for the same position
 3. **Bold keywords** that appear in job posting to increase ATS match rate
 4. **Verify PDF generation** before moving to final directory

@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\raggedright\large
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Laith Assaf} \\ \vspace{1pt}
+    \small East Lansing, MI $|$ (248) 480-5783 $|$ \href{mailto:assaflai@msu.edu}{\underline{assaflai@msu.edu}} $|$ \href{https://linkedin.com/in/laith-assaf-}{\underline{linkedin.com/in/laith-assaf-}} $|$ \href{https://github.com/Novapool}{\underline{github.com/Novapool}}
+\end{center}
+%----------SUMMARY----------
+\section{Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    Computer Science student who designs systems and then explains them. Architected a multi-service game platform and a real-estate pricing model, and spent three years translating technical failures into plain language for non-technical users.
+    }}
+ \end{itemize}
+\vspace{-6pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Michigan State University, College of Engineering}{East Lansing, MI}
+      {BS Computer Science, AI/ML $|$ Minor in Economics $|$ Dean's List x3}{August 2022 - May 2027}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework}: Cloud Computing \& Database Systems, Computer Systems, Data Structures \& Algorithms}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PC Technician Intern}{May 2026 - Present}
+      {Onsite Support Team, Delta Dental}{Okemos, MI}
+      \resumeItemListStart
+        \resumeItem{Deployed and configured \textbf{150+} workstations across a new corporate office buildout, imaging endpoints via \textbf{Ivanti} MDM to enforce one standardized configuration across the fleet rather than per-machine setup}
+      \resumeItemListEnd
+    \resumeSubheading
+      {IT and Media Services Support Associate}{May 2023 - Present}
+      {MSU College of Osteopathic Medicine}{East Lansing, MI}
+      \resumeItemListStart
+        \resumeItem{Supported 100+ classroom technology systems across 4 locations serving \textbf{1,200+ students}, resolving \textbf{50-70 tickets weekly} and communicating fixes to faculty with no technical background mid-lecture}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Bonfire Platform \& Ember Framework} $|$ \emph{TypeScript, Socket.io, Firebase}}{December 2025 -- April 2026}
+          \resumeItemListStart
+            \resumeItem{Architected a \textbf{multi-room orchestration system} on Express + \textbf{Socket.io} namespaces with \textbf{Firebase} state sync, hosting 4 concurrent games on one \textbf{Railway} server with configurable disconnect and TTL cleanup}
+            \resumeItem{Extracted the shared game lifecycle into \textbf{Ember}, a published open-source framework (3 npm packages), trading upfront abstraction cost for \textbf{80\%+ code reuse} on every subsequent build}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AI-Assisted Comparative Market Analysis} $|$ \emph{Python, scikit-learn, Streamlit}}{June 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built a sold-price prediction tool over metro Detroit \textbf{MLS} history reaching \textbf{13.3\% MAPE}, surfacing the comparable sales behind every estimate so an agent can defend the number to a client}
+            \resumeItem{Recommended \textbf{against} launch after benchmarking output at 13.3\% MAPE versus the \textbf{5\%} agent-grade bar, tracing the gap to missing source fields rather than model choice, and staged the roadmap around closing the data gap first}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Toyota GR Cup Telemetry Analysis} $|$ \emph{Python, PostgreSQL, scikit-learn}}{2025}
+          \resumeItemListStart
+            \resumeItem{Modeled tire degradation across \textbf{3,257 laps} from 7 racetracks, reaching \textbf{R\textsuperscript{2} = 0.631} on high-frequency telemetry}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Self-Hosted Home Lab Infrastructure} $|$ \emph{Linux, Docker, Networking}}{2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Administer a rack server (\textbf{128GB+ RAM}) running containerized media, game, and \textbf{VPN} services under \textbf{Docker}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Michigan State University $|$ AI Club}{East Lansing, MI}
+      {Workshop Coordinator \& Project Lead}{January 2025 - Present}
+      \resumeItemListStart
+        \resumeItem{Presented 8+ technical workshops on \textbf{local LLM deployment} and \textbf{PyTorch} fundamentals to 500+ attendees, and led a 4-student team scoping and shipping an \textbf{LLM-powered} academic predictor}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Architecture \& Cloud}{: system design, distributed state sync, REST APIs, WebSockets, Docker, Railway, Vercel} \\
+     \textbf{Data}{: PostgreSQL, SQL, pandas, scikit-learn, ETL and preprocessing pipelines} \\
+     \textbf{Languages}{: Python, TypeScript, C++, C\#, SQL} \\
+     \textbf{Platforms \& Tools}{: Linux, Windows, Git, FastAPI, Flask, Express, Next.js, Active Directory, Intune, Ivanti MDM}
+    }}
+ \end{itemize}
+
+\end{document}

@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\raggedright\large
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Laith Assaf} \\ \vspace{1pt}
+    \small East Lansing, MI $|$ (248) 480-5783 $|$ \href{mailto:assaflai@msu.edu}{\underline{assaflai@msu.edu}} $|$ \href{https://linkedin.com/in/laith-assaf-}{\underline{linkedin.com/in/laith-assaf-}} $|$ \href{https://github.com/Novapool}{\underline{github.com/Novapool}}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Michigan State University, College of Engineering}{East Lansing, MI}
+      {BS Computer Science, AI/ML $|$ Dean's List x3}{August 2022 - May 2027}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Cloud Computing \& Database Systems (CSE 380), Computer Systems (CSE 325), Computer Organization \& ARM Assembly (CSE 320), Data Structures \& Algorithms (CSE 331)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PC Technician Intern}{May 2026 - Present}
+      {Onsite Support Team, Delta Dental}{Okemos, MI}
+      \resumeItemListStart
+        \resumeItem{Deployed and configured \textbf{150+} workstations (monitors, docking stations, keyboards, mice) across a new corporate office buildout, imaging endpoints via \textbf{Ivanti} MDM to enforce standardized enterprise configuration}
+        \resumeItem{Automating ticket creation in \textbf{Power Automate} to cut manual intake from the onsite support queue; execute PC imaging, disk backups, and certified drive kills across the full endpoint lifecycle}
+      \resumeItemListEnd
+    \resumeSubheading
+      {IT and Media Services Support Associate}{May 2023 - Present}
+      {MSU College of Osteopathic Medicine}{East Lansing, MI}
+      \resumeItemListStart
+        \resumeItem{Configured 100+ classroom technology systems (projectors, audio, video conferencing) across 4 locations supporting \textbf{1,200+ students}, resolving \textbf{50-70 tickets weekly} at a 5-10 minute average response}
+        \resumeItem{Engineered a troubleshooting framework maintaining \textbf{99.5\% classroom uptime}, diagnosing network connectivity, display output, audio routing, and \textbf{Zoom} conferencing failures within a 5-minute SLA}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Self-Hosted Home Lab Infrastructure} $|$ \emph{Linux, Docker, Networking}}{2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Administer a rack server (\textbf{128GB+ RAM}) running containerized media, game, and \textbf{VPN} services under \textbf{Docker}, self-managing Linux, networking, storage, and service orchestration as a production-like environment}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Nexus - AI-Powered SSH Terminal Management} $|$ \emph{FastAPI, Ollama, Docker}}{2025}
+          \resumeItemListStart
+            \resumeItem{Built an \textbf{SSH} management platform pairing live terminal access with a \textbf{locally hosted LLM} (Ollama), translating natural-language requests into shell commands behind a \textbf{safety validation} layer}
+            \resumeItem{Implemented real-time terminal I/O over \textbf{WebSockets} on a \textbf{FastAPI} backend with a Svelte frontend, handling multi-server connection state and session lifecycle; containerized with \textbf{Docker}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Bonfire Platform \& Ember Framework} $|$ \emph{TypeScript, Socket.io, Firebase}}{December 2025 -- April 2026}
+          \resumeItemListStart
+            \resumeItem{Architected a \textbf{multi-room orchestration system} on Express + \textbf{Socket.io} with \textbf{Firebase} state sync, hosting 4 concurrent games on one \textbf{Railway} server with TTL-based cleanup and configurable disconnect handling}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SoundSense - Real-Time Audio Classification} $|$ \emph{YAMNet, Flask} $|$ \textbf{2nd Place, MHacks}}{October 2025}
+          \resumeItemListStart
+            \resumeItem{Placed \textbf{2nd of 300+ participants at MHacks 2025} building a real-time audio classifier on \textbf{YAMNet} CNN and MemryX edge hardware, hitting \textbf{95\% accuracy} at $<$50ms latency for hearing-impaired users}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Michigan State University $|$ AI Club}{East Lansing, MI}
+      {Workshop Coordinator \& Project Lead}{January 2025 - Present}
+      \resumeItemListStart
+        \resumeItem{Delivered 8+ technical workshops on \textbf{local LLM deployment} (Ollama, LM Studio) and \textbf{PyTorch} fundamentals to 500+ attendees, translating technical setup steps for a mixed-experience audience}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{IT \& Enterprise}{: Active Directory, Intune, Ivanti MDM, Power Automate, endpoint imaging, ticketing workflows} \\
+     \textbf{Systems \& Networking}{: Windows, macOS, Linux, Docker, VPN configuration, TCP/IP, DNS, DHCP, backups} \\
+     \textbf{Scripting \& Languages}{: Python, Bash, SQL, C++, TypeScript} \\
+     \textbf{Cloud \& Tools}{: Git, PostgreSQL, Firebase, Railway, Vercel, FastAPI, Flask, Ollama, LM Studio}
+    }}
+ \end{itemize}
+
+\end{document}
