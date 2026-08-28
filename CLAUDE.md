@@ -131,6 +131,25 @@ The cover letter lives in `master_cover_letter.tex` and uses the moderncv templa
 1. **No em dashes for continuing sentences** - use commas or periods instead. Em dashes (`---` in LaTeX) are only acceptable for hyphenated/compound words. Overuse reads as AI-generated.
 2. **Always check page count after editing** - the letter must fit on one page with the closing on the same page.
 
+### Reference Paragraph (the target voice)
+
+This is the approved example of how a project should read in a cover letter. Match this register:
+
+> I trained a Pokemon battle agent to a 93% win rate against scripted opponents using behavior cloning and PPO with MCTS at decision time. Then a review of my own evaluation harness showed the comparison was confounded: my search arm decoded greedily while the baseline sampled, which accounted for nearly the entire gain I'd been reporting. I restated the numbers and reopened two milestones. On the live ladder it still wins about 20% of contested games, and closing that gap is what I'm working on now.
+
+**Why it works, and what to copy:**
+- Every claim is checkable in both directions. Compare against the generic version: *"My Pokemon battle agent achieved a 93% win rate, showcasing my expertise in reinforcement learning."* Nobody can verify "showcasing my expertise," and every applicant writes it
+- It names the specific technical failure (greedy vs.\ sampled decoding), not a vague "I learned a lot from my mistakes"
+- It states the unfinished part plainly. Over-polished reads as fabricated in 2026; a real open problem does not
+- It survives follow-up questions, because the details are real
+
+**Rules for using this register:**
+- **Once per letter**, inside the project paragraph. Never in the opening or the closing
+- Used once it reads as confidence — being able to afford showing the ugly part. Used three times it reads as apologizing, and a cover letter is not the place to relitigate your own results
+- Only applies where there is a real artifact behind it. Do not manufacture a self-criticism to sound authentic
+
+---
+
 ### Cover Letter Guidelines
 
 1. **Three-paragraph structure**:

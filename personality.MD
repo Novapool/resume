@@ -81,6 +81,7 @@ This file contains personal background, interests, technical experience, and mot
 - Tested and retired a transformer policy against the MLP baseline; six hypotheses returned null or weak
 - Ran a self-review that found four confounds invalidating prior results, then restated every affected number
 - The project I care most about. It is genuinely hard and the honest answer is that the ladder gap is still open
+- **Approved cover-letter framing for this project lives in `CLAUDE.md` under "Reference Paragraph".** Use it once per letter, in the project paragraph only
 
 ### Agentic Development System (January 2026 - Present)
 - 10-agent orchestration pipeline with a single transient plan file as the handoff contract, applied across 44 repositories

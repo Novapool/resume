@@ -95,7 +95,8 @@ The internship market remains intensely competitive, though AI/ML roles have exp
 - Certifications: List here or in Education (AWS SAA, Google Cloud, CompTIA A+/Network+)
 - **AI/ML specific**: List model types you've worked with (CNNs, transformers, LLMs) and datasets/domains
 
-### Section: Projects (the primary differentiator)
+### Section: Projects
+*(This file calls Projects the primary differentiator and places them above Experience. **Overruled for this repo** — Experience comes first, in both section order and grading weight. See `CLAUDE.md`.)*
 - 2–4 projects; 2–3 bullets each
 - Formula: **[Action Verb] + [Technical Detail] + [Technologies Used] + [Quantified Outcome]**
 - For AI/ML: Always include dataset size, model architecture, and performance metric

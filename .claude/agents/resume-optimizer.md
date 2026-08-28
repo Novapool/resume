@@ -135,16 +135,18 @@ Work through every item in AUTO-FAIL CHECKS. Flag each failure with a short expl
 
 **Step 4: Grade Against research.md Standards**
 
-**SWE weights**: Education (15%) | Projects (40%) | Experience (20%) | Technical Skills (15%) | Leadership (10%)
+Weights are ordered to match the section order: **Experience is graded before and above Projects on every track.**
 
-**AI/ML weights**: Education (15%) | Projects (45%) | Experience (15%) | Technical Skills (15%) | Leadership (10%)
-*(Projects carry extra weight — deployed ML work is treated as early work experience)*
+**SWE weights**: Education (15%) | Experience (30%) | Projects (30%) | Technical Skills (15%) | Leadership (10%)
 
-**IT weights**: Education (15%) | Experience (30%) | Projects (25%) | Technical Skills (20%) | Leadership (10%)
-*(Experience leads — IT roles care about operational history)*
+**AI/ML weights**: Education (15%) | Experience (30%) | Projects (30%) | Technical Skills (15%) | Leadership (10%)
 
-**SA weights**: Summary (10%) | Education (15%) | Projects (25%) | Experience (25%) | Technical Skills (15%) | Leadership (10%)
-*(Communication framing matters; projects + experience weighted equally)*
+**IT weights**: Education (15%) | Experience (35%) | Projects (20%) | Technical Skills (20%) | Leadership (10%)
+*(Operational history carries the most weight on this track)*
+
+**SA weights**: Summary (10%) | Education (15%) | Experience (28%) | Projects (22%) | Technical Skills (15%) | Leadership (10%)
+
+`research.md` weights Projects at 40-45% for SWE/AI on the theory that projects outweigh unrelated job history for first-time candidates. That has been overruled here alongside the section order. Grade to the weights above.
 
 **Step 5: Deliver Structured Feedback**
 
