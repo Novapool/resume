@@ -5,14 +5,6 @@
 % License : MIT
 %------------------------
 
-% FONT SIZE AUDIT (Fix 5 — flag only, no changes made):
-% Section headings: \titleformat{\section} uses \bfseries\large — consistent across all sections.
-% Body text: \resumeSubheading uses \textbf for org/title (no explicit size, inherits document 11pt),
-%   \small for dates and subtitle lines. \resumeItem uses \small for bullet content.
-%   \resumeProjectHeading uses \small for the project title line and no size command on the date field (inherits 11pt).
-%   Minor inconsistency: project heading date (right column) is unsized (11pt) while subheading
-%   dates use \small — visually negligible but worth manual review if alignment feels off.
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -108,8 +100,26 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------
+% SUPERSET / ARCHIVE -- NOT FOR SUBMISSION
+%
+% This file is the source of truth: every experience, project, bullet variant,
+% and skill lives here. One-page, job-type resumes are assembled FROM this file,
+% they are not edited into it.
+%
+% Track tags on each block mark which variants it feeds:
+%   SWE = software engineering   AI = AI/ML + agentic
+%   IT  = IT / systems support   SA = solutions architect
+%
+% The one-page line-filling rules in CLAUDE.md do NOT apply here. Bullets in this
+% file are written to be complete and accurate; trimming to line multiples happens
+% when a block is copied into a variant.
+%
+% % VERIFY: comments mark numbers I could not confirm from a repo, README, or
+% commit history. Confirm or restate them before they go into a submitted resume.
+%-------------------------------------------
 
+\newcommand{\track}[1]{{\footnotesize\color{Gray}[#1]}\;}
 
 \begin{document}
 
@@ -117,6 +127,8 @@
 \begin{center}
     {\Huge \scshape Laith Assaf} \\ \vspace{1pt}
     \small East Lansing, MI $|$ (248) 480-5783 $|$ \href{mailto:assaflai@msu.edu}{\underline{assaflai@msu.edu}} $|$ \href{https://linkedin.com/in/laith-assaf-}{\underline{linkedin.com/in/laith-assaf-}} $|$ \href{https://github.com/Novapool}{\underline{github.com/Novapool}}
+    \\ \vspace{2pt}
+    {\footnotesize \color{Gray} SUPERSET ARCHIVE -- assemble one-page variants from this file; do not submit it}
 \end{center}
 
 %-----------EDUCATION-----------
@@ -124,9 +136,11 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Michigan State University, College of Engineering}{East Lansing, MI}
-      {BS Computer Science, AI/ML $|$ Dean's List x3}{August 2022 - May 2027}
+      {BS Computer Science, AI/ML $|$ Minor in Economics $|$ Dean's List x3}{August 2022 - May 2027}
       \resumeItemListStart
-        \resumeItem{\textbf{Relevant Coursework}: Data Structures \& Algorithms (CSE 331), Cloud Computing (CSE 380), Software Design (CSE 335), Computer Systems (CSE 325)}
+        \resumeItem{\track{SWE}\textbf{Coursework}: Data Structures \& Algorithms (CSE 331), Software Design (CSE 335), Computer Systems (CSE 325), Computer Organization \& ARM Assembly (CSE 320)}
+        \resumeItem{\track{AI}\textbf{Coursework}: Data Structures \& Algorithms (CSE 331), Cloud Computing \& Database Systems (CSE 380), Software Design (CSE 335), Computer Organization (CSE 320)}
+        \resumeItem{\track{IT/SA}\textbf{Coursework}: Cloud Computing \& Database Systems (CSE 380), Computer Systems (CSE 325), Computer Organization \& ARM Assembly (CSE 320), International Trade Economics (EC 440)}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -138,16 +152,17 @@
       {PC Technician Intern}{May 2026 - Present}
       {Onsite Support Team, Delta Dental}{Okemos, MI}
       \resumeItemListStart
-        \resumeItem{Deployed and configured \textbf{150+} workstations (monitors, docking stations, keyboards, mice) across a new corporate office buildout, imaging endpoints via \textbf{Ivanti} MDM to enforce standardized enterprise configuration}
-        \resumeItem{Developing an automated ticket creation workflow in \textbf{Power Automate} to streamline IT ops; performed PC imaging and disk backups and drive kills across endpoint lifecycle tasks}
+        \resumeItem{\track{IT/SA}Deployed and configured \textbf{150+} workstations (monitors, docking stations, keyboards, mice) across a new corporate office buildout, imaging endpoints via \textbf{Ivanti} MDM to enforce standardized enterprise configuration}
+        \resumeItem{\track{SWE/IT}Developing an automated ticket creation workflow in \textbf{Power Automate} to streamline IT ops; performed PC imaging and disk backups and drive kills across endpoint lifecycle tasks}
       \resumeItemListEnd
 
     \resumeSubheading
       {IT and Media Services Support Associate}{May 2023 - Present}
       {MSU College of Osteopathic Medicine}{East Lansing, MI}
       \resumeItemListStart
-        \resumeItem{Configured and maintained 100+ classroom technology systems (projectors, audio systems, video conferencing) across 4 locations supporting \textbf{1,200+ students}, resolving 50-70 technical tickets weekly with 5-10 minute average response time}
-        \resumeItem{Engineered systematic troubleshooting framework maintaining \textbf{99.5\% classroom uptime} and preventing \$50K annual losses through diagnostic methodology, resolving network connectivity, display output, audio routing, and Zoom conferencing issues within 5-minute SLA}
+        \resumeItem{\track{IT/SA}Configured and maintained 100+ classroom technology systems (projectors, audio systems, video conferencing) across 4 locations supporting \textbf{1,200+ students}, resolving 50-70 technical tickets weekly with 5-10 minute average response time}
+        \resumeItem{\track{IT}Engineered a systematic troubleshooting framework maintaining \textbf{99.5\% classroom uptime} across live lectures, diagnosing network connectivity, display output, audio routing, and Zoom conferencing failures within a 5-minute SLA}
+        \resumeItem{\track{SWE/AI}Supported 100+ classroom AV and conferencing systems across 4 buildings serving \textbf{1,200+ students}, resolving 50-70 tickets weekly and maintaining \textbf{99.5\% uptime} through a documented diagnostic methodology}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -155,33 +170,99 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+
       \resumeProjectHeading
-          {\textbf{SoundSense - Real-Time Audio Classification} $|$ \emph{YAMNet, WebSocket} $|$ \textbf{MHacks Winner}}{October 2025}
+          {\track{AI/SWE}\textbf{Pokemon Battle Agent - Reinforcement Learning} $|$ \emph{PyTorch, PPO, MCTS}}{May 2026 -- Present}
           \resumeItemListStart
-            \resumeItem{\textbf{Won at MHacks 2025} (300+ participants, 24-hour hackathon) building real-time audio classification system using \textbf{YAMNet} CNN on MemryX MXA2301 edge accelerators, achieving \textbf{95\% accuracy} at $<$50ms latency across 521 AudioSet classes; delivered hazard alerts via \textbf{Flask} + \textbf{WebSocket} pipeline to a live web interface for hearing-impaired users}
+            \resumeItem{Trained a competitive battle agent through \textbf{behavior cloning} on human replay data, \textbf{anchored PPO} fine-tuning of an MLP policy/value network over structured per-Pokemon token observations, and \textbf{determinized MCTS} at decision time, reaching \textbf{93\% win rate} against scripted baselines}
+            \resumeItem{Built a parallel battle-simulation and evaluation harness on the Pokemon Showdown engine, running \textbf{747 rated ladder games} across \textbf{11 milestones} against a pre-registered evaluation methodology written before each experiment}
+            \resumeItem{Ran a code review that uncovered \textbf{four confounds} invalidating prior results (greedy vs.\ stochastic decoding accounting for the entire reported search gain; opponent concessions inflating ladder win rate by \textbf{$\sim$7pp}), then restated every affected number and reopened two milestones rather than reporting the inflated figure}
+            \resumeItem{Tested and retired a transformer policy against an MLP baseline, documenting six hypotheses returned null or weak, to isolate observation quality from search as the binding constraint}
           \resumeItemListEnd
+
       \resumeProjectHeading
-          {\textbf{Bonfire Platform \& Ember Framework} $|$ \emph{TypeScript, Node.js, Socket.io, Next.js}}{December 2025 -- Present}
+          {\track{AI/SWE}\textbf{Agentic Development System} $|$ \emph{Claude Code, subagents, hooks, MCP}}{January 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Designed a \textbf{10-agent orchestration pipeline} (planner $\rightarrow$ parallel builders $\rightarrow$ reviewer, tester, simplifier, docs auditor) with a single transient plan file as the handoff contract, applied across \textbf{44 repositories}}
+            \resumeItem{Instrumented \textbf{11 lifecycle hook events} (tool pre/post, tool failure, subagent start/stop, session start/end) to enforce project conventions automatically instead of relying on prompt discipline}
+            \resumeItem{Authored a tiered documentation protocol with \textbf{pre-registered success gates}, requiring every milestone to define a testable criterion (``LCP $<$ 2.5s measured by X'') before implementation begins, plus \textbf{5 reusable skills} for debugging, adversarial review, and requirements elicitation}
+            \resumeItem{Wrote \textbf{6 custom agents} and cross-repository index documents coordinating a multi-package monorepo, cutting context re-derivation between sessions}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\track{AI/SWE}\textbf{SoundSense - Real-Time Audio Classification} $|$ \emph{YAMNet, Flask} $|$ \textbf{2nd Place, MHacks}}{October 2025}
+          \resumeItemListStart
+            \resumeItem{Placed \textbf{2nd of 300+ participants at MHacks 2025} (24-hour hackathon) building a real-time audio classification system using \textbf{YAMNet} CNN on MemryX MXA2301 edge accelerators, achieving \textbf{95\% accuracy} at $<$50ms latency across 521 AudioSet classes}
+            \resumeItem{Delivered hazard alerts through a \textbf{Flask} + \textbf{WebSocket} pipeline to a live web interface for hearing-impaired users, running inference fully on-device}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\track{SWE}\textbf{Bonfire Platform \& Ember Framework} $|$ \emph{TypeScript, Socket.io, Next.js}}{December 2025 -- April 2026}
           \resumeItemListStart
             \resumeItem{Designed and published \textbf{Ember}, an open-source TypeScript framework for multiplayer party games (\textbf{@bonfire-ember/core/server/client} npm packages), implementing phase state machine, WebSocket room orchestration, and player lifecycle into a 5-hook API enabling \textbf{80\%+ code reuse} across new game builds}
-            \resumeItem{Architected \textbf{multi-room orchestration system} on Express + \textbf{Socket.io} namespaces with \textbf{Firebase Realtime DB} state sync, hosting 4 concurrent games on a single \textbf{Railway} server with configurable disconnect strategies and TTL-based cleanup supporting 1,000+ concurrent rooms}
+            % VERIFY: "80%+ code reuse" -- derive from actual shared-vs-game-specific LOC across the games repo.
+            \resumeItem{Architected a \textbf{multi-room orchestration system} on Express + \textbf{Socket.io} namespaces with \textbf{Firebase Realtime DB} state sync, hosting 4 concurrent games on a single \textbf{Railway} server with configurable disconnect strategies and TTL-based cleanup}
+            % VERIFY: "1,000+ concurrent rooms" was a load-test claim; removed until a benchmark backs it.
+            \resumeItem{Shipped \textbf{64 commits} across three packages (framework, platform, games) with a documented issue-flow contract between the framework repo and its consumer game repos}
           \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\track{AI/SA}\textbf{AI-Assisted Comparative Market Analysis} $|$ \emph{Python, scikit-learn, Streamlit}}{June 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built a sold-price prediction model over metro Detroit \textbf{MLS} history achieving \textbf{13.3\% MAPE} with \textbf{52\% of estimates within 10\%}, surfacing the comparable sales behind each estimate so the output is auditable rather than a bare number}
+            \resumeItem{Diagnosed the accuracy ceiling as a data problem, not a model problem: square footage present on only \textbf{17\%} of sold records and lot size, parking, and condition missing entirely; documented the gap against the \textbf{5\% MAPE} agent-grade bar and gated the product roadmap on closing it instead of shipping}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\track{AI/SWE/IT}\textbf{Nexus - AI-Powered SSH Terminal Management} $|$ \emph{FastAPI, Svelte, Ollama, Docker}}{2025}
+          \resumeItemListStart
+            \resumeItem{Built a multi-server SSH management platform pairing live terminal access with a \textbf{locally hosted LLM} (\textbf{Ollama}, gpt-oss:20b), streaming natural-language requests into suggested shell commands behind a \textbf{safety validation} layer so no generated command executes unreviewed}
+            \resumeItem{Implemented real-time terminal I/O over \textbf{WebSockets} with a \textbf{FastAPI} backend and Svelte 5 frontend, handling multi-server connection state and session lifecycle; containerized with \textbf{Docker}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\track{AI/SA}\textbf{Toyota GR Cup Telemetry Analysis} $|$ \emph{Python, PostgreSQL, scikit-learn}}{2025}
+          \resumeItemListStart
+            \resumeItem{Modeled tire degradation across \textbf{3,257 laps} from 7 racetracks at a hackathon, reaching \textbf{R\textsuperscript{2} = 0.631} on high-frequency telemetry loaded into \textbf{PostgreSQL} with ML-ready preprocessing pipelines}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\track{IT/SA}\textbf{Self-Hosted Home Lab Infrastructure} $|$ \emph{Linux, Docker, Networking}}{2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Operate a rack server (\textbf{128GB+ RAM}) running containerized media, game, and \textbf{VPN} services under \textbf{Docker}, self-administering Linux, networking, and service orchestration as a production-like environment}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\track{SWE}\textbf{Personal Portfolio Site} $|$ \emph{Next.js, TypeScript, Tailwind}}{2026}
+          \resumeItemListStart
+            \resumeItem{Built and deployed a personal portfolio and resume site in \textbf{Next.js} + \textbf{TypeScript}, shipped across \textbf{34 commits}}
+          \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 
-%-----------LEADERSHIP-----------
+%-----------LEADERSHIP / EXTRACURRICULAR-----------
 \section{Leadership}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Michigan State University $|$ AI Club}{East Lansing, MI}
       {Workshop Coordinator}{January 2025 - Present}
       \resumeItemListStart
-        \resumeItem{Developed and delivered 8+ technical workshops on \textbf{local LLM deployment} (Ollama, LM Studio), AI ethics, and ML fundamentals (\textbf{PyTorch}) to 500+ attendees across 15 sessions, recording 90\% retention and 4.8/5 satisfaction score}
+        \resumeItem{\track{AI/SWE}Developed and delivered 8+ technical workshops on \textbf{local LLM deployment} (Ollama, LM Studio), AI ethics, and ML fundamentals (\textbf{PyTorch}) to 500+ attendees across 15 sessions, recording 90\% retention and 4.8/5 satisfaction score}
+        % VERIFY: attendee count, retention %, and 4.8/5 satisfaction -- confirm the source before submitting.
+        \resumeItem{\track{AI}Built and taught a \textbf{multi-agent orchestrator} demo coordinating Scope, Architecture, Builder, and Reviewer agents to plan and generate a web application from a one-line idea, used as live workshop material}
       \resumeItemListEnd
     \resumeSubheading
       {Michigan State University $|$ AI Club}{East Lansing, MI}
       {Project Lead}{January 2025 - May 2025}
       \resumeItemListStart
-        \resumeItem{Led 4-student team building Academic Performance Predictor using \textbf{GPT-4 API} and prompt engineering, delivering \textbf{80\% prediction accuracy} across 50+ courses with OpenAI API and agile sprints}
+        \resumeItem{\track{AI/SWE}Led a 4-student team building an Academic Performance Predictor using the \textbf{GPT-4 API} and prompt engineering, delivering \textbf{80\% prediction accuracy} across 50+ courses with agile sprints}
+        % VERIFY: "80% prediction accuracy" -- accuracy of what, on how many examples? Restate or cut.
+      \resumeItemListEnd
+    \resumeSubheading
+      {Michigan State University $|$ AI Club}{East Lansing, MI}
+      {Workshop Coordinator \& Project Lead}{January 2025 - Present}
+      \resumeItemListStart
+        \resumeItem{\track{MERGED}Delivered 8+ technical workshops on \textbf{local LLM deployment} (Ollama, LM Studio), agent orchestration, and \textbf{PyTorch} fundamentals to 500+ attendees, and led a 4-student team shipping an \textbf{LLM-powered} academic performance predictor across 50+ courses}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -189,10 +270,12 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C++, C\#, SQL, TypeScript} \\
-     \textbf{AI/ML}{: PyTorch, OpenAI API, YAMNet, Ollama} \\
-     \textbf{Web \& Mobile}{: FastAPI, Flask, React, Node.js, Express, Socket.io, REST APIs, WebSockets, Firebase} \\
-     \textbf{Infrastructure \& Tools}{: Git, Linux, Docker, Railway, Vercel, Active Directory, Intune, Ivanti, Power Automate}
+     \textbf{Languages}{: Python, C++, C\#, TypeScript, JavaScript, SQL, ARM Assembly} \\
+     \textbf{AI/ML}{: PyTorch, scikit-learn, pandas, NumPy, PPO / reinforcement learning, MCTS, behavior cloning, CNNs} \\
+     \textbf{AI Engineering}{: LLM APIs (Anthropic, OpenAI), agent orchestration, MCP, prompt engineering, local inference (Ollama, LM Studio), model evaluation} \\
+     \textbf{Web \& Backend}{: FastAPI, Flask, Express, Node.js, React, Next.js, Socket.io, REST APIs, WebSockets, Streamlit} \\
+     \textbf{Data \& Infrastructure}{: PostgreSQL, Firebase, Docker, Linux, Git, Railway, Vercel, networking / VPN} \\
+     \textbf{IT \& Enterprise}{: Active Directory, Intune, Ivanti MDM, Power Automate, endpoint imaging, ticketing workflows}
     }}
  \end{itemize}
 
