@@ -96,7 +96,7 @@ The internship market remains intensely competitive, though AI/ML roles have exp
 - **AI/ML specific**: List model types you've worked with (CNNs, transformers, LLMs) and datasets/domains
 
 ### Section: Projects
-*(This file calls Projects the primary differentiator and places them above Experience. **Overruled for this repo** — Experience comes first, in both section order and grading weight. See `CLAUDE.md`.)*
+*(**Partially overruled for this repo.** Section order always puts Experience above Projects, on every track. Grading weight splits by what the track hires for: Projects lead on SWE and AI/ML (build roles), Experience leads on IT and SA (operate-and-explain roles). See `CLAUDE.md`.)*
 - 2–4 projects; 2–3 bullets each
 - Formula: **[Action Verb] + [Technical Detail] + [Technologies Used] + [Quantified Outcome]**
 - For AI/ML: Always include dataset size, model architecture, and performance metric

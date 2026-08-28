@@ -135,18 +135,21 @@ Work through every item in AUTO-FAIL CHECKS. Flag each failure with a short expl
 
 **Step 4: Grade Against research.md Standards**
 
-Weights are ordered to match the section order: **Experience is graded before and above Projects on every track.**
+**Section order and grading weight are separate decisions.** The section order is fixed at Education -> Experience -> Projects on every track (see RESUME STRUCTURE above) and does not change. Weights below reflect what each track actually hires for, which is not always the same thing.
 
-**SWE weights**: Education (15%) | Experience (30%) | Projects (30%) | Technical Skills (15%) | Leadership (10%)
+The split is **build vs. operate**. SWE and AI/ML hire for what you can build, so Projects lead. IT and SA hire for operating systems and explaining them to people, so Experience leads.
 
-**AI/ML weights**: Education (15%) | Experience (30%) | Projects (30%) | Technical Skills (15%) | Leadership (10%)
+**SWE weights**: Education (12%) | Projects (33%) | Experience (25%) | Technical Skills (20%) | Leadership (10%)
+*(Projects lead: the candidate's employment is IT support, which shows reliability but not software engineering. Ember and the RL agent are what answer a SWE manager's actual question)*
+
+**AI/ML weights**: Education (12%) | Projects (35%) | Experience (22%) | Technical Skills (21%) | Leadership (10%)
+*(Projects lead hardest here: deployed ML work is treated as early work experience, and the candidate has no ML employment)*
 
 **IT weights**: Education (15%) | Experience (35%) | Projects (20%) | Technical Skills (20%) | Leadership (10%)
-*(Operational history carries the most weight on this track)*
+*(Experience leads: operational history is the signal)*
 
-**SA weights**: Summary (10%) | Education (15%) | Experience (28%) | Projects (22%) | Technical Skills (15%) | Leadership (10%)
-
-`research.md` weights Projects at 40-45% for SWE/AI on the theory that projects outweigh unrelated job history for first-time candidates. That has been overruled here alongside the section order. Grade to the weights above.
+**SA weights**: Summary (10%) | Education (13%) | Experience (30%) | Projects (22%) | Technical Skills (15%) | Leadership (10%)
+*(Experience leads: SA is a translation role, and three years explaining technical failures to non-technical faculty plus enterprise tooling is the closest thing the candidate has to client-facing work. Do not weight projects above it here)*
 
 **Step 5: Deliver Structured Feedback**
 
