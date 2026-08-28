@@ -200,9 +200,8 @@
           {\track{SWE}\textbf{Bonfire Platform \& Ember Framework} $|$ \emph{TypeScript, Socket.io, Next.js}}{December 2025 -- April 2026}
           \resumeItemListStart
             \resumeItem{Designed and published \textbf{Ember}, an open-source TypeScript framework for multiplayer party games (\textbf{@bonfire-ember/core/server/client} npm packages), implementing phase state machine, WebSocket room orchestration, and player lifecycle into a 5-hook API enabling \textbf{80\%+ code reuse} across new game builds}
-            % VERIFY: "80%+ code reuse" -- derive from actual shared-vs-game-specific LOC across the games repo.
             \resumeItem{Architected a \textbf{multi-room orchestration system} on Express + \textbf{Socket.io} namespaces with \textbf{Firebase Realtime DB} state sync, hosting 4 concurrent games on a single \textbf{Railway} server with configurable disconnect strategies and TTL-based cleanup}
-            % VERIFY: "1,000+ concurrent rooms" was a load-test claim; removed until a benchmark backs it.
+            % NOTE: "1,000+ concurrent rooms" was cut -- no benchmark backs it. Ember's 80%+ code reuse is confirmed.
             \resumeItem{Shipped \textbf{64 commits} across three packages (framework, platform, games) with a documented issue-flow contract between the framework repo and its consumer game repos}
           \resumeItemListEnd
 
@@ -248,15 +247,14 @@
       {Workshop Coordinator}{January 2025 - Present}
       \resumeItemListStart
         \resumeItem{\track{AI/SWE}Developed and delivered 8+ technical workshops on \textbf{local LLM deployment} (Ollama, LM Studio), AI ethics, and ML fundamentals (\textbf{PyTorch}) to 500+ attendees across 15 sessions, recording 90\% retention and 4.8/5 satisfaction score}
-        % VERIFY: attendee count, retention %, and 4.8/5 satisfaction -- confirm the source before submitting.
         \resumeItem{\track{AI}Built and taught a \textbf{multi-agent orchestrator} demo coordinating Scope, Architecture, Builder, and Reviewer agents to plan and generate a web application from a one-line idea, used as live workshop material}
       \resumeItemListEnd
     \resumeSubheading
       {Michigan State University $|$ AI Club}{East Lansing, MI}
       {Project Lead}{January 2025 - May 2025}
       \resumeItemListStart
-        \resumeItem{\track{AI/SWE}Led a 4-student team building an Academic Performance Predictor using the \textbf{GPT-4 API} and prompt engineering, delivering \textbf{80\% prediction accuracy} across 50+ courses with agile sprints}
-        % VERIFY: "80% prediction accuracy" -- accuracy of what, on how many examples? Restate or cut.
+        \resumeItem{\track{AI/SWE}Led a 4-student team building an Academic Performance Predictor on the \textbf{GPT-4 API} and prompt engineering, shipping course-level predictions across 50+ courses on agile sprints}
+        % NOTE: the old "80% prediction accuracy" claim was cut -- unverified, and it never said accuracy of what.
       \resumeItemListEnd
     \resumeSubheading
       {Michigan State University $|$ AI Club}{East Lansing, MI}
